@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bank and online pay | Expansion Plus Wiki</title>
+<meta name="description" content="Bank and online pay Tablet → Banking. The bank is the player&#x27;s Expansion bank, the same money the ATMs use. No ATM is needed to use it from the tablet. Acc">
+<meta property="og:title" content="Bank and online pay | Expansion Plus Wiki">
+<meta property="og:description" content="Bank and online pay Tablet → Banking. The bank is the player&#x27;s Expansion bank, the same money the ATMs use. No ATM is needed to use it from the tablet. Acc">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open the menu" data-menu>&#9776;</button>
+  <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="8" y="10" width="6" height="5" rx="1.2" fill="currentColor"/><rect x="18" y="10" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="8" y="18" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="18" y="18" width="6" height="5" rx="1.2" fill="currentColor"/></svg><span class="brand-name">Expansion Plus</span><span class="brand-tag">Wiki</span></a>
+  <div class="search">
+    <input type="search" id="q" placeholder="Search the wiki" autocomplete="off" aria-label="Search the wiki">
+    <kbd class="search-key">Ctrl K</kbd>
+    <div class="results" id="results" role="listbox"></div>
+  </div>
+  <nav class="top-links">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
+    <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
+    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+      <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="version">Version 1.13.2</div>
+    <div class="nav-group"><p class="nav-title">Getting started</p><ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="getting-started.html">Getting started</a></li>
+<li><a href="tablet.html">The tablet</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<li><a href="bank.html" class="active" aria-current="page">Bank and online pay</a></li>
+<li><a href="garage.html">Garage</a></li>
+<li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="shops.html">Player shops</a></li>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="messages.html">Messages</a></li>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+<li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Admins</p><ul>
+<li><a href="admin.html">Admin panel</a></li>
+<li><a href="restock.html">Restock a trader</a></li>
+<li><a href="market-editor.html">Market editor</a></li>
+<li><a href="garage-admin.html">Garage admin</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Reference</p><ul>
+<li><a href="settings.html">Settings reference</a></li>
+<li><a href="files.html">Files and folders</a></li>
+<li><a href="troubleshooting.html">Troubleshooting and FAQ</a></li>
+<li><a href="changelog.html">Changelog</a></li>
+</ul></div>
+  </aside>
+  <main class="content">
+    <p class="crumb">Player features</p>
+    <article class="doc">
+<h1 id="bank-and-online-pay">Bank and online pay<a class="headerlink" href="#bank-and-online-pay" title="Permanent link">#</a></h1>
+<p><strong>Tablet → Banking.</strong> The bank is the player's Expansion bank, the same money the ATMs use. No ATM is needed to use it from the tablet.</p>
+<h2 id="accounts">Accounts<a class="headerlink" href="#accounts" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Bank limit: 500,000,000</strong> for player and group accounts (setting <code>BankMaxBalance</code>). Expansion's own default is 100,000; Expansion Plus raises it at start-up and checks it every minute.</li>
+<li><strong>DEPOSIT CASH / WITHDRAW CASH</strong> anywhere.</li>
+<li><strong>Savings</strong> – a second account paying <strong>10% every 24 hours</strong>, compounding. <strong>PUT IN SAVINGS / TAKE OUT</strong>.</li>
+<li><strong>Group account</strong> – one per Expansion group. <strong>OPEN GROUP ACCOUNT</strong>, then any member can <strong>PAY IN</strong> or <strong>TAKE OUT</strong>, and the group sees the last moves.</li>
+<li><strong>SEND MONEY</strong> – find any player, online or offline, and send them money from your bank.</li>
+<li><strong>TRANSACTIONS</strong> – every payment in and out with date, time and type.</li>
+</ul>
+<h2 id="loans">Loans<a class="headerlink" href="#loans" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Lend</strong> – put money up as loan offers, held from your bank. Post as many as you like, <strong>ADD AMOUNT</strong> to one, or <strong>WITHDRAW</strong> it.</li>
+<li><strong>Borrow from players</strong> – every offer, cheapest first. Take one for <strong>1, 2, 4 or 7 days</strong> and pay it back with <strong>35% on top</strong>.</li>
+<li><strong>Borrow from the bank</strong> – up to <strong>100,000</strong>, with <strong>50% on top</strong>, for the same times.</li>
+<li><strong>PAY BACK NOW</strong> at any time. Otherwise, on the due date the money is taken from your bank, then your savings.</li>
+<li><strong>Can't pay?</strong> What you have goes to the lender, then <strong>a random vehicle from your garage is lost for good</strong> (a player lender gets it in their garage). With no vehicle in your garage, <strong>your whole inventory is taken</strong> (at your next login if you're offline).</li>
+<li>You're warned an hour before a loan is due. One running loan per borrower by default.</li>
+</ul>
+<h2 id="online-pay">Online pay<a class="headerlink" href="#online-pay" title="Permanent link">#</a></h2>
+<p>Players are <strong>paid into their bank for time online</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pay players for time online</td>
+<td>On</td>
+</tr>
+<tr>
+<td>Pay per hour online</td>
+<td>500</td>
+</tr>
+<tr>
+<td>Pay out every</td>
+<td>60 minutes (30 = half the hourly pay every 30 minutes)</td>
+</tr>
+<tr>
+<td>Tell the player</td>
+<td>On</td>
+</tr>
+</tbody>
+</table>
+<p>Each payment shows in the bank transactions as <strong>Online pay</strong>. Admins change these in <strong>F8 → SETTINGS → ONLINE PAY</strong>.</p>
+<div class="callout note">
+<p class="callout-title">Note</p>
+<p>If another mod on your server also pays for time online, turn one of them off so players don't get two messages.</p>
+</div>
+<h2 id="for-admins">For admins<a class="headerlink" href="#for-admins" title="Permanent link">#</a></h2>
+<p><strong>F8 → BANKING</strong>: every rate and limit, banking on or off, bank loans and group accounts on or off, a savings cap, totals, running loans (with <strong>CANCEL DEBT</strong>) and the bank log. Saved in <code>profiles/GhostzSuite/Bank.json</code>.</p>
+    </article>
+    <nav class="pager"><a class="prev" href="tablet.html"><span>Previous</span>The tablet</a><a class="next" href="garage.html"><span>Next</span>Garage</a></nav>
+    <footer class="foot">
+      <span>Expansion Plus by Ghostz Gaming</span>
+      <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
+    </footer>
+  </main>
+  <aside class="toc">
+    <p class="toc-title">On this page</p>
+    <ul>
+<li class="l2"><a href="#accounts">Accounts</a></li>
+<li class="l2"><a href="#loans">Loans</a></li>
+<li class="l2"><a href="#online-pay">Online pay</a></li>
+<li class="l2"><a href="#for-admins">For admins</a></li>
+    </ul>
+  </aside>
+</div>
+<div class="scrim" data-menu></div>
+<script src="app.js"></script>
+</body>
+</html>

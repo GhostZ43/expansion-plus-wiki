@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market editor | Expansion Plus Wiki</title>
+<meta name="description" content="Market editor F8 → MARKET edits Expansion&#x27;s market without touching JSON. Traders profiles/ExpansionMod/Traders Display name, icon, currencies, reputation ">
+<meta property="og:title" content="Market editor | Expansion Plus Wiki">
+<meta property="og:description" content="Market editor F8 → MARKET edits Expansion&#x27;s market without touching JSON. Traders profiles/ExpansionMod/Traders Display name, icon, currencies, reputation ">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open the menu" data-menu>&#9776;</button>
+  <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="8" y="10" width="6" height="5" rx="1.2" fill="currentColor"/><rect x="18" y="10" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="8" y="18" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="18" y="18" width="6" height="5" rx="1.2" fill="currentColor"/></svg><span class="brand-name">Expansion Plus</span><span class="brand-tag">Wiki</span></a>
+  <div class="search">
+    <input type="search" id="q" placeholder="Search the wiki" autocomplete="off" aria-label="Search the wiki">
+    <kbd class="search-key">Ctrl K</kbd>
+    <div class="results" id="results" role="listbox"></div>
+  </div>
+  <nav class="top-links">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
+    <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
+    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+      <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="version">Version 1.13.2</div>
+    <div class="nav-group"><p class="nav-title">Getting started</p><ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="getting-started.html">Getting started</a></li>
+<li><a href="tablet.html">The tablet</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="garage.html">Garage</a></li>
+<li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="shops.html">Player shops</a></li>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="messages.html">Messages</a></li>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+<li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Admins</p><ul>
+<li><a href="admin.html">Admin panel</a></li>
+<li><a href="restock.html">Restock a trader</a></li>
+<li><a href="market-editor.html" class="active" aria-current="page">Market editor</a></li>
+<li><a href="garage-admin.html">Garage admin</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Reference</p><ul>
+<li><a href="settings.html">Settings reference</a></li>
+<li><a href="files.html">Files and folders</a></li>
+<li><a href="troubleshooting.html">Troubleshooting and FAQ</a></li>
+<li><a href="changelog.html">Changelog</a></li>
+</ul></div>
+  </aside>
+  <main class="content">
+    <p class="crumb">Admins</p>
+    <article class="doc">
+<h1 id="market-editor">Market editor<a class="headerlink" href="#market-editor" title="Permanent link">#</a></h1>
+<p><strong>F8 → MARKET</strong> edits Expansion's market without touching JSON.</p>
+<h2 id="traders">Traders<a class="headerlink" href="#traders" title="Permanent link">#</a></h2>
+<p><code>profiles/ExpansionMod/Traders</code></p>
+<ul>
+<li>Display name, icon, currencies, reputation limits, required faction and category order.</li>
+<li>Add or remove categories and set each to <strong>BUY + SELL</strong>, <strong>BUY ONLY</strong> or <strong>SELL ONLY</strong>.</li>
+<li>Add or remove single items. Create or delete trader files.</li>
+</ul>
+<h2 id="categories">Categories<a class="headerlink" href="#categories" title="Permanent link">#</a></h2>
+<p><code>profiles/ExpansionMod/Market</code></p>
+<ul>
+<li>Display name, icon, colour, starting stock % and exchange flag.</li>
+<li>Add, edit or delete items: lowest and highest price, lowest and highest stock, sell %, quantity %, attachments and variants.</li>
+<li>Items that aren't real game classes are flagged red. A classname can only be in one category.</li>
+<li>Deleting a category also removes it from every trader.</li>
+</ul>
+<h2 id="trader-locations">Trader locations<a class="headerlink" href="#trader-locations" title="Permanent link">#</a></h2>
+<p><code>mission/expansion/traders/*.map</code></p>
+<ul>
+<li>Change an NPC's class, trader file, position, orientation and clothes.</li>
+<li><strong>USE MY POSITION</strong> moves it to where you stand; <strong>TELEPORT</strong> takes you to it.</li>
+<li><strong>ADD NPC HERE</strong> places a new one; <strong>DELETE NPC</strong> removes one.</li>
+</ul>
+<div class="callout tip">
+<p class="callout-title">Tip</p>
+<p>Every file is backed up to <code>profiles/GhostzSuite/Backups/</code> before it's changed. Expansion reads market files only at start-up, so <strong>restart</strong> to see your edits.</p>
+</div>
+    </article>
+    <nav class="pager"><a class="prev" href="restock.html"><span>Previous</span>Restock a trader</a><a class="next" href="garage-admin.html"><span>Next</span>Garage admin</a></nav>
+    <footer class="foot">
+      <span>Expansion Plus by Ghostz Gaming</span>
+      <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
+    </footer>
+  </main>
+  <aside class="toc">
+    <p class="toc-title">On this page</p>
+    <ul>
+<li class="l2"><a href="#traders">Traders</a></li>
+<li class="l2"><a href="#categories">Categories</a></li>
+<li class="l2"><a href="#trader-locations">Trader locations</a></li>
+    </ul>
+  </aside>
+</div>
+<div class="scrim" data-menu></div>
+<script src="app.js"></script>
+</body>
+</html>

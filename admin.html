@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin panel | Expansion Plus Wiki</title>
+<meta name="description" content="Admin panel F8 Admins press F8 . Every change is saved on the server at once. Dangerous buttons delete, wipe need a second click , and every admin action i">
+<meta property="og:title" content="Admin panel | Expansion Plus Wiki">
+<meta property="og:description" content="Admin panel F8 Admins press F8 . Every change is saved on the server at once. Dangerous buttons delete, wipe need a second click , and every admin action i">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open the menu" data-menu>&#9776;</button>
+  <a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="8" y="10" width="6" height="5" rx="1.2" fill="currentColor"/><rect x="18" y="10" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="8" y="18" width="6" height="5" rx="1.2" fill="currentColor" opacity=".65"/><rect x="18" y="18" width="6" height="5" rx="1.2" fill="currentColor"/></svg><span class="brand-name">Expansion Plus</span><span class="brand-tag">Wiki</span></a>
+  <div class="search">
+    <input type="search" id="q" placeholder="Search the wiki" autocomplete="off" aria-label="Search the wiki">
+    <kbd class="search-key">Ctrl K</kbd>
+    <div class="results" id="results" role="listbox"></div>
+  </div>
+  <nav class="top-links">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
+    <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
+    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+      <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+</header>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="version">Version 1.13.2</div>
+    <div class="nav-group"><p class="nav-title">Getting started</p><ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="getting-started.html">Getting started</a></li>
+<li><a href="tablet.html">The tablet</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="garage.html">Garage</a></li>
+<li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="shops.html">Player shops</a></li>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="messages.html">Messages</a></li>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+<li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Admins</p><ul>
+<li><a href="admin.html" class="active" aria-current="page">Admin panel</a></li>
+<li><a href="restock.html">Restock a trader</a></li>
+<li><a href="market-editor.html">Market editor</a></li>
+<li><a href="garage-admin.html">Garage admin</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Reference</p><ul>
+<li><a href="settings.html">Settings reference</a></li>
+<li><a href="files.html">Files and folders</a></li>
+<li><a href="troubleshooting.html">Troubleshooting and FAQ</a></li>
+<li><a href="changelog.html">Changelog</a></li>
+</ul></div>
+  </aside>
+  <main class="content">
+    <p class="crumb">Admins</p>
+    <article class="doc">
+<h1 id="admin-panel-f8">Admin panel (F8)<a class="headerlink" href="#admin-panel-f8" title="Permanent link">#</a></h1>
+<p>Admins press <strong>F8</strong>. Every change is saved on the server at once. Dangerous buttons (delete, wipe) need a <strong>second click</strong>, and every admin action is written to <code>GhostzSuite.log</code> with the admin's name.</p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What admins do there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INBOX</td>
+<td>Read, answer and delete player calls and reports</td>
+</tr>
+<tr>
+<td>INFO</td>
+<td>Edit the F9 page; reset all stats</td>
+</tr>
+<tr>
+<td>SETTINGS</td>
+<td>Every setting in plain-English groups; add or remove admins</td>
+</tr>
+<tr>
+<td>SHOPS</td>
+<td>View, rename, set funds, teleport, respawn the container, delete</td>
+</tr>
+<tr>
+<td>TERRITORY</td>
+<td>Teleport, +7 days free, delete flag, wipe all; rent history</td>
+</tr>
+<tr>
+<td>AUDIT</td>
+<td>Rank the biggest bases by object count, with teleport and wipe</td>
+</tr>
+<tr>
+<td>RENTALS</td>
+<td>Make market vehicles rentable, set time and cost; end rentals</td>
+</tr>
+<tr>
+<td>TRACKERS</td>
+<td>Every tracked and rented vehicle: teleport, untrack</td>
+</tr>
+<tr>
+<td>CONTRACTS</td>
+<td>Running and open jobs, courier routes, random points</td>
+</tr>
+<tr>
+<td>PLAYERS</td>
+<td>Bank accounts: set a balance, wipe bank, territories or everything</td>
+</tr>
+<tr>
+<td>TRADE LOG</td>
+<td>Every Expansion market purchase and sale, with filters</td>
+</tr>
+<tr>
+<td>MARKET</td>
+<td>The <a href="market-editor.html">market editor</a></td>
+</tr>
+<tr>
+<td>RESTOCK</td>
+<td><a href="restock.html">Restock a trader</a></td>
+</tr>
+<tr>
+<td>FILES</td>
+<td>Line-by-line editor for <code>.json</code> and <code>.map</code> files in <code>profiles/ExpansionMod</code> and <code>mission/expansion</code></td>
+</tr>
+</tbody>
+</table>
+<p>The footer opens <strong>BANKING</strong>, <strong>CONTROL ZONES</strong>, <strong>MAP MARKERS</strong> and <strong><a href="garage-admin.html">GARAGE ADMIN</a></strong>.</p>
+<h2 id="control-zones">Control zones<a class="headerlink" href="#control-zones" title="Permanent link">#</a></h2>
+<p>Add zones with a name, type, kind (income), radius (10–2000 m) and colour, centred where you stand or picked on the map. <strong>EDIT</strong>, <strong>DELETE</strong>, <strong>FREE IT</strong> and <strong>PAY NOW</strong>. Settings cover incomes, minutes to take, bonus %, payout hours and split or full pay.</p>
+<h2 id="map-markers">Map markers<a class="headerlink" href="#map-markers" title="Permanent link">#</a></h2>
+<p>Add, edit and delete Expansion server markers: a name, a position (or <strong>USE MY POSITION</strong>), an icon from Expansion's full icon list with pictures and a search, a colour slider, and map, world or both. They're saved into Expansion's <code>MapSettings.json</code>.</p>
+<h2 id="server-info">Server info<a class="headerlink" href="#server-info" title="Permanent link">#</a></h2>
+<p><strong>F8 → INFO</strong> edits the F9 page: title, welcome lines, rules, wipes, restart times, events and links. <strong>RESET ALL STATS</strong> starts every player's stats again; <strong>PREVIEW</strong> shows the page.</p>
+    </article>
+    <nav class="pager"><a class="prev" href="community.html"><span>Previous</span>Donations, players and info</a><a class="next" href="restock.html"><span>Next</span>Restock a trader</a></nav>
+    <footer class="foot">
+      <span>Expansion Plus by Ghostz Gaming</span>
+      <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
+    </footer>
+  </main>
+  <aside class="toc">
+    <p class="toc-title">On this page</p>
+    <ul>
+<li class="l2"><a href="#control-zones">Control zones</a></li>
+<li class="l2"><a href="#map-markers">Map markers</a></li>
+<li class="l2"><a href="#server-info">Server info</a></li>
+    </ul>
+  </aside>
+</div>
+<div class="scrim" data-menu></div>
+<script src="app.js"></script>
+</body>
+</html>
