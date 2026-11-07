@@ -2,7 +2,7 @@
 
 The official wiki for **Expansion Plus**, the all-in-one add-on for **DayZ Expansion** servers by Ghostz Gaming.
 
-**Read the wiki:** https://YOUR-USERNAME.github.io/expansion-plus-wiki/
+**Read the wiki:** https://ghostz43.github.io/expansion-plus-wiki/
 
 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217) · [Discord](https://discord.gg/waZrD357wZ) · [Buy me a coffee](https://buymeacoffee.com/ghostzgaming)
 
@@ -42,7 +42,7 @@ The wiki has search (**Ctrl + K**), light and dark themes, and works on phones.
 4. Turn on the Expansion ATM (`"ATMSystemEnabled": 1` in `MarketSettings.json`).
 5. Add your Steam64 ID to `Admins` in `profiles/GhostzSuite/Settings.json`, then press **F8** in game.
 
-Full steps are on the [Getting started](https://YOUR-USERNAME.github.io/expansion-plus-wiki/getting-started.html) page.
+Full steps are on the [Getting started](https://ghostz43.github.io/expansion-plus-wiki/getting-started.html) page.
 
 ## About this repository
 
