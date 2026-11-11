@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Courier contracts | Expansion Plus Wiki</title>
-<meta name="description" content="Courier contracts Tablet → Contracts EP Courier Co. . Carry a crate from a pickup to a drop-off for pay. Doing a job Pick a job from the job board . Pay is">
+<meta name="description" content="Courier contracts Jobs → Contracts EP Courier Co. . Carry a crate from a pickup to a drop-off for pay. Doing a job Pick a job from the job board . Pay is p">
 <meta property="og:title" content="Courier contracts | Expansion Plus Wiki">
-<meta property="og:description" content="Courier contracts Tablet → Contracts EP Courier Co. . Carry a crate from a pickup to a drop-off for pay. Doing a job Pick a job from the job board . Pay is">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Courier contracts Jobs → Contracts EP Courier Co. . Carry a crate from a pickup to a drop-off for pay. Doing a job Pick a job from the job board . Pay is p">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html" class="active" aria-current="page">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html" class="active" aria-current="page">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -64,10 +89,10 @@
 </ul></div>
   </aside>
   <main class="content">
-    <p class="crumb">Player features</p>
+    <p class="crumb">Jobs</p>
     <article class="doc">
 <h1 id="courier-contracts">Courier contracts<a class="headerlink" href="#courier-contracts" title="Permanent link">#</a></h1>
-<p><strong>Tablet → Contracts</strong> (EP Courier Co.). Carry a crate from a pickup to a drop-off for pay.</p>
+<p><strong>Jobs → Contracts</strong> (EP Courier Co.). Carry a crate from a pickup to a drop-off for pay.</p>
 <h2 id="doing-a-job">Doing a job<a class="headerlink" href="#doing-a-job" title="Permanent link">#</a></h2>
 <ol>
 <li>Pick a job from the <strong>job board</strong>. Pay is per km of the route (<strong>4,000 per km</strong> by default).</li>
@@ -91,8 +116,17 @@
 </div>
 <h2 id="player-jobs">Player jobs<a class="headerlink" href="#player-jobs" title="Permanent link">#</a></h2>
 <p>Post your own delivery: the pickup is where you stand, <strong>PICK ON MAP</strong> sets the drop-off, then set the pay and <strong>POST JOB</strong>. The pay is held from your bank and a crate appears for you to fill. <strong>CANCEL</strong> refunds you before anyone takes it.</p>
+<h2 id="quests-and-missions">Quests and missions<a class="headerlink" href="#quests-and-missions" title="Permanent link">#</a></h2>
+<p><strong>Jobs → Contracts → QUESTS AND MISSIONS</strong>:</p>
+<ul>
+<li>Every Expansion quest you can do, your running quests, their objectives and rewards.</li>
+<li><strong>Start</strong> and <strong>cancel</strong> quests from the tablet. <strong>Hand in</strong> finished quests too, if the admin allows it (off by default), with one button per reward choice.</li>
+<li><strong>Quest money rewards go straight into your bank.</strong></li>
+<li>Running Expansion missions (airdrops, AI missions) with difficulty, location, distance and time left.</li>
+</ul>
+<p>Admins set these in <strong>F8 → SETTINGS → QUESTS AND MISSIONS</strong>.</p>
     </article>
-    <nav class="pager"><a class="prev" href="messages.html"><span>Previous</span>Messages</a><a class="next" href="control-zones.html"><span>Next</span>Control zones</a></nav>
+    <nav class="pager"><a class="prev" href="community.html"><span>Previous</span>Donations, players and info</a><a class="next" href="bounties.html"><span>Next</span>Bounties</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -105,6 +139,7 @@
 <li class="l2"><a href="#everyone-sees-the-crates">Everyone sees the crates</a></li>
 <li class="l2"><a href="#robbing-and-pvp">Robbing and PvP</a></li>
 <li class="l2"><a href="#player-jobs">Player jobs</a></li>
+<li class="l2"><a href="#quests-and-missions">Quests and missions</a></li>
     </ul>
   </aside>
 </div>

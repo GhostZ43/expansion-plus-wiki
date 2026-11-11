@@ -7,9 +7,11 @@
 <meta name="description" content="Getting started Requirements Mod Workshop ID Why Community Framework CF 1559212036 Core framework, file access Dabs Framework 2545327648 Needed by Expansio">
 <meta property="og:title" content="Getting started | Expansion Plus Wiki">
 <meta property="og:description" content="Getting started Requirements Mod Workshop ID Why Community Framework CF 1559212036 Core framework, file access Dabs Framework 2545327648 Needed by Expansio">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html" class="active" aria-current="page">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -101,27 +126,31 @@
 </table>
 <div class="callout note">
 <p class="callout-title">Note</p>
-<p><strong>The Expansion ATM must be on.</strong> Set <code>"ATMSystemEnabled": 1</code> in <code>profiles/ExpansionMod/Settings/MarketSettings.json</code>. Shops, rent, banking and online pay all use the Expansion bank.</p>
+<p><strong>The Expansion ATM must be on.</strong> Set <code>"ATMSystemEnabled": 1</code> in <code>profiles/ExpansionMod/Settings/MarketSettings.json</code>. Banking, shops, rent, fees and online pay all use the Expansion bank.</p>
 </div>
 <h2 id="install-on-the-server">Install on the server<a class="headerlink" href="#install-on-the-server" title="Permanent link">#</a></h2>
 <ol>
 <li>Copy <code>@GhostzSuite</code> into your server folder.</li>
-<li>Copy <code>@GhostzSuite/keys/GhostzSuite.bikey</code> into the server's <code>keys</code> folder.</li>
+<li>Copy <code>@GhostzSuite/keys/Ghostz.bikey</code> into the server's <code>keys</code> folder.</li>
 <li>Load it <strong>last</strong>, after Expansion and after any PvE mod:
    <code>-mod=@CF;@Dabs Framework;@DayZ-Expansion-Licensed;@DayZ-Expansion-Bundle;@GhostzSuite</code></li>
-<li>Start the server once.</li>
+<li>Start the server once. It creates <code>profiles/GhostzSuite/</code> and <code>profiles/GhostzQoLPlus/</code>.</li>
 </ol>
+<div class="callout warning">
+<p class="callout-title">Warning</p>
+<p>Do <strong>not</strong> load <code>@GhostzQoLPlus</code> with Expansion Plus 1.20 or later. Its code is already inside, and loading both stops the server starting.</p>
+</div>
 <h2 id="players">Players<a class="headerlink" href="#players" title="Permanent link">#</a></h2>
 <p>Players subscribe on the Steam Workshop (ID <strong>3832964217</strong>). The tablet, map drawing and sounds run on each player's game, so <strong>players always need the same version as the server</strong>.</p>
 <h2 id="your-first-admin">Your first admin<a class="headerlink" href="#your-first-admin" title="Permanent link">#</a></h2>
 <ol>
-<li>Start the server once. It creates <code>profiles/GhostzSuite/</code> with <code>Settings.json</code>.</li>
+<li>Start the server once. It creates <code>profiles/GhostzSuite/Settings.json</code>.</li>
 <li>Stop the server and add your <strong>Steam64 ID</strong> to <code>Admins</code>:
    <code>json
    "Admins": ["76561198000000000"]</code></li>
 <li>Start the server, join and press <strong>F8</strong>.</li>
 </ol>
-<p>After that, add or remove admins in game on the <strong>SETTINGS</strong> tab. <strong>ADD MY ID</strong> adds yourself. If someone who isn't an admin presses F8, the panel shows them their Steam64 ID so they can send it to you.</p>
+<p>After that, add or remove admins in game on <strong>F8 → SETTINGS</strong> (<strong>ADD MY ID</strong> adds yourself). Admins in Expansion Plus are admins of the Workshop apps too. If someone who isn't an admin presses F8, the panel shows them their Steam64 ID so they can send it to you. Narrower roles are covered in <a href="admin.html#admin-roles">Admin panel</a>.</p>
 <h2 id="make-the-shop-kit-buyable">Make the shop kit buyable<a class="headerlink" href="#make-the-shop-kit-buyable" title="Permanent link">#</a></h2>
 <p>Players open a shop with a <strong>Player Shop Kit</strong>. Add it to a trader:</p>
 <ol>
@@ -140,7 +169,11 @@
 <tbody>
 <tr>
 <td><strong>F7</strong></td>
-<td>Opens the tablet (player menu)</td>
+<td>The tablet</td>
+</tr>
+<tr>
+<td><strong>F5</strong></td>
+<td>The tablet, open on the Workshop hub</td>
 </tr>
 <tr>
 <td><strong>F8</strong></td>
@@ -151,20 +184,30 @@
 <td>Server info</td>
 </tr>
 <tr>
+<td><strong>K</strong></td>
+<td>Garage</td>
+</tr>
+<tr>
 <td><strong>Numpad 0</strong></td>
 <td>Cruise control while driving</td>
 </tr>
 <tr>
+<td><strong>Mouse wheel up</strong></td>
+<td>Boat radar on / off (in a boat)</td>
+</tr>
+<tr>
 <td><strong>Esc</strong></td>
-<td>Closes the menu</td>
+<td>Back (inside an app), or closes the tablet</td>
 </tr>
 </tbody>
 </table>
 <p>All keys can be changed under <strong>Options → Controls → Expansion Plus</strong>.</p>
 <h3 id="cruise-control">Cruise control<a class="headerlink" href="#cruise-control" title="Permanent link">#</a></h3>
-<p>While driving a car or motorbike at 5 km/h or more, press the cruise key to hold your speed. <strong>Up / Down arrow</strong> change it by 5 km/h. The cruise key again, the brake or the handbrake turn it off. Accelerating still speeds you up, and cruise picks up again when you let go.</p>
+<p>While driving a car, motorbike or boat, press the cruise key to hold your speed. <strong>Up / Down arrow</strong> change it by 5 km/h (hold to keep changing). The cruise key again, the brake, the handbrake, reversing a boat, stopping the engine or leaving the seat turn it off. Accelerating still speeds you up, and cruise picks up again when you let go.</p>
+<h3 id="boat-radar">Boat radar<a class="headerlink" href="#boat-radar" title="Permanent link">#</a></h3>
+<p>In a boat, a small round radar sits in the bottom-right corner: 500 m range, heading-up, with a sweep line. Vehicles show orange, people white, boats blue. <strong>Mouse wheel up</strong> turns it on or off.</p>
     </article>
-    <nav class="pager"><a class="prev" href="index.html"><span>Previous</span>Introduction</a><a class="next" href="tablet.html"><span>Next</span>The tablet</a></nav>
+    <nav class="pager"><a class="prev" href="index.html"><span>Previous</span>Introduction</a><a class="next" href="updating.html"><span>Next</span>Updating to 1.20</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -180,6 +223,7 @@
 <li class="l2"><a href="#make-the-shop-kit-buyable">Make the shop kit buyable</a></li>
 <li class="l2"><a href="#keys">Keys</a></li>
 <li class="l3"><a href="#cruise-control">Cruise control</a></li>
+<li class="l3"><a href="#boat-radar">Boat radar</a></li>
     </ul>
   </aside>
 </div>

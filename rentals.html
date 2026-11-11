@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rentals and tracker | Expansion Plus Wiki</title>
-<meta name="description" content="Vehicle rental and tracker Vehicle rental Tablet → Rentals EP Rent-a-Ride . Stand within 50 m of any trader , or rent straight into your garage and take it">
+<meta name="description" content="Vehicle rental and tracker Vehicle rental Garage → Rentals EP Rent-a-Ride . Stand within 50 m of any trader , or rent straight into your garage and take it">
 <meta property="og:title" content="Rentals and tracker | Expansion Plus Wiki">
-<meta property="og:description" content="Vehicle rental and tracker Vehicle rental Tablet → Rentals EP Rent-a-Ride . Stand within 50 m of any trader , or rent straight into your garage and take it">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Vehicle rental and tracker Vehicle rental Garage → Rentals EP Rent-a-Ride . Stand within 50 m of any trader , or rent straight into your garage and take it">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html" class="active" aria-current="page">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -64,28 +89,28 @@
 </ul></div>
   </aside>
   <main class="content">
-    <p class="crumb">Player features</p>
+    <p class="crumb">Garage</p>
     <article class="doc">
 <h1 id="vehicle-rental-and-tracker">Vehicle rental and tracker<a class="headerlink" href="#vehicle-rental-and-tracker" title="Permanent link">#</a></h1>
 <h2 id="vehicle-rental">Vehicle rental<a class="headerlink" href="#vehicle-rental" title="Permanent link">#</a></h2>
-<p><strong>Tablet → Rentals</strong> (EP Rent-a-Ride).</p>
+<p><strong>Garage → Rentals</strong> (EP Rent-a-Ride).</p>
 <ul>
 <li>Stand within <strong>50 m of any trader</strong>, or rent straight into your garage and take it out later.</li>
 <li>Admins choose which market vehicles can be rented, for how long and at what price.</li>
-<li>Rentals come out <strong>full</strong>: fuel, oil, brake fluid, coolant and a <strong>charged battery</strong>, with every part.</li>
+<li>Rentals come out <strong>full</strong>: fuel, oil, brake fluid, coolant and a <strong>charged battery</strong>, with every part, and a paired key if the server uses Expansion car keys.</li>
 <li>You're warned <strong>5 minutes</strong> before the time runs out. When it ends, the vehicle is removed, so <strong>don't leave loot in it</strong>.</li>
 <li>Your rentals show on your map. One rental at a time by default.</li>
 </ul>
 <h2 id="vehicle-tracker">Vehicle tracker<a class="headerlink" href="#vehicle-tracker" title="Permanent link">#</a></h2>
 <ul>
-<li>Sit in the driver's seat and press <strong>TRACKER → TRACK THIS VEHICLE</strong>.</li>
+<li><strong>Garage → Tracker.</strong> Sit in the driver's seat and press <strong>TRACK THIS VEHICLE</strong>.</li>
 <li>Tracked vehicles appear on your Expansion map and follow the vehicle.</li>
 <li>Each one can be a <strong>2D marker</strong> (map only) or a <strong>3D marker</strong> (map and in the world).</li>
 <li>Tracking <strong>stops by itself</strong> when the vehicle is parked, towed, impounded or destroyed, and you're told why.</li>
 <li>Up to <strong>3</strong> tracked vehicles by default. <strong>STOP</strong> removes one.</li>
 </ul>
     </article>
-    <nav class="pager"><a class="prev" href="garage.html"><span>Previous</span>Garage</a><a class="next" href="shops.html"><span>Next</span>Player shops</a></nav>
+    <nav class="pager"><a class="prev" href="taxi.html"><span>Previous</span>Taxi</a><a class="next" href="vehicle-dashboard.html"><span>Next</span>Vehicle dashboard</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>

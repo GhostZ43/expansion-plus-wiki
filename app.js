@@ -2,6 +2,16 @@
   var root = document.documentElement;
 
   // Light / dark (remembered).
+  // Follows the device (dark / light) until the visitor picks one.
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: light)");
+    var follow = function (e) {
+      var saved = null;
+      try { saved = localStorage.getItem("ep-theme"); } catch (x) {}
+      if (!saved) root.setAttribute("data-theme", e.matches ? "light" : "dark");
+    };
+    if (mq.addEventListener) mq.addEventListener("change", follow); else if (mq.addListener) mq.addListener(follow);
+  }
   var themeBtn = document.querySelector("[data-theme-toggle]");
   if (themeBtn) themeBtn.addEventListener("click", function () {
     var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";

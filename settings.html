@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Settings reference | Expansion Plus Wiki</title>
-<meta name="description" content="Settings reference Every setting is editable in game F8 &gt; SETTINGS, or GARAGE ADMIN &gt; SETTINGS for the garage and is saved to profiles/GhostzSuite/Settings">
+<meta name="description" content="Settings reference Every setting is editable in game and saved on the server. Switches: 1 = on, 0 = off. Where In game File Main settings F8 → SETTINGS pro">
 <meta property="og:title" content="Settings reference | Expansion Plus Wiki">
-<meta property="og:description" content="Settings reference Every setting is editable in game F8 &gt; SETTINGS, or GARAGE ADMIN &gt; SETTINGS for the garage and is saved to profiles/GhostzSuite/Settings">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Settings reference Every setting is editable in game and saved on the server. Switches: 1 = on, 0 = off. Where In game File Main settings F8 → SETTINGS pro">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -67,9 +92,41 @@
     <p class="crumb">Reference</p>
     <article class="doc">
 <h1 id="settings-reference">Settings reference<a class="headerlink" href="#settings-reference" title="Permanent link">#</a></h1>
-<p>Every setting is editable in game (F8 &gt; SETTINGS, or GARAGE ADMIN &gt; SETTINGS for the garage) and is saved to <code>profiles/GhostzSuite/Settings.json</code> or <code>profiles/GhostzSuite/Garage.json</code>. Switches: 1 = on, 0 = off.</p>
+<p>Every setting is editable in game and saved on the server. Switches: 1 = on, 0 = off.</p>
+<table>
+<thead>
+<tr>
+<th>Where</th>
+<th>In game</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main settings</td>
+<td>F8 → SETTINGS</td>
+<td><code>profiles/GhostzSuite/Settings.json</code></td>
+</tr>
+<tr>
+<td>Garage settings</td>
+<td>F8 → GARAGE ADMIN → SETTINGS</td>
+<td><code>profiles/GhostzSuite/Garage.json</code></td>
+</tr>
+<tr>
+<td>Stock exchange</td>
+<td>F8 → STOCK EXCHANGE</td>
+<td><code>profiles/GhostzSuite/Stocks/Settings.json</code></td>
+</tr>
+<tr>
+<td>Workshop apps</td>
+<td>F8 → ALL TOOLS → QOL ADMIN CONTROL</td>
+<td><code>profiles/GhostzQoLPlus/&lt;App&gt;.json</code></td>
+</tr>
+</tbody>
+</table>
+<p>New settings appear with their defaults after an update; nothing needs migrating.</p>
 <h2 id="main-settings-settingsjson">Main settings (Settings.json)<a class="headerlink" href="#main-settings-settingsjson" title="Permanent link">#</a></h2>
-<h3 id="player-shops">Player shops<a class="headerlink" href="#player-shops" title="Permanent link">#</a></h3>
+<h3 id="player-shops">Player Shops<a class="headerlink" href="#player-shops" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -166,7 +223,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="territory-rent">Territory rent<a class="headerlink" href="#territory-rent" title="Permanent link">#</a></h3>
+<h3 id="territory-rent">Territory Rent<a class="headerlink" href="#territory-rent" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -240,7 +297,7 @@
 <tr>
 <td>Extra asset prefixes</td>
 <td><code>RentPartPrefixes</code></td>
-<td>(empty)</td>
+<td>new TStringArray</td>
 <td>class names starting with these count too, e.g. BBP_, MSP_ (comma separated)</td>
 </tr>
 <tr>
@@ -275,7 +332,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="vehicle-rental">Vehicle rental<a class="headerlink" href="#vehicle-rental" title="Permanent link">#</a></h3>
+<h3 id="vehicle-rental">Vehicle Rental<a class="headerlink" href="#vehicle-rental" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -324,7 +381,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="vehicle-tracker">Vehicle tracker<a class="headerlink" href="#vehicle-tracker" title="Permanent link">#</a></h3>
+<h3 id="vehicle-tracker">Vehicle Tracker<a class="headerlink" href="#vehicle-tracker" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -457,9 +514,131 @@
 <td>5</td>
 <td>how often wanted / hunter markers move</td>
 </tr>
+<tr>
+<td>Show the wanted player</td>
+<td><code>BountyShowTarget</code></td>
+<td>1</td>
+<td>red skull on the map (1 = on, 0 = off)</td>
+</tr>
+<tr>
+<td>Wanted skull for everyone</td>
+<td><code>BountyShowTargetAll</code></td>
+<td>1</td>
+<td>1 = every player sees it, 0 = only the hunter and the poster</td>
+</tr>
+<tr>
+<td>Show the hunter</td>
+<td><code>BountyShowHunter</code></td>
+<td>1</td>
+<td>green skull on the target's and poster's map (1 = on, 0 = off)</td>
+</tr>
+<tr>
+<td>Hunter gets one try</td>
+<td><code>BountyHunterOneLife</code></td>
+<td>1</td>
+<td>if the hunter dies the bounty opens again for someone else (1 / 0)</td>
+</tr>
+<tr>
+<td>Discord webhook URL</td>
+<td><code>BountyWebhookUrl</code></td>
+<td>(empty)</td>
+<td>Discord channel &gt; Edit &gt; Integrations &gt; Webhooks &gt; Copy URL (blank = off)</td>
+</tr>
+<tr>
+<td>Discord: new bounties</td>
+<td><code>BountyWebhookNew</code></td>
+<td>1</td>
+<td>1 / 0</td>
+</tr>
+<tr>
+<td>Discord: bounty claimed</td>
+<td><code>BountyWebhookTaken</code></td>
+<td>1</td>
+<td>a hunter takes a bounty (1 / 0)</td>
+</tr>
+<tr>
+<td>Discord: bounty paid</td>
+<td><code>BountyWebhookPaid</code></td>
+<td>1</td>
+<td>the target is killed and the hunter paid (1 / 0)</td>
+</tr>
+<tr>
+<td>Discord: ended / reopened</td>
+<td><code>BountyWebhookEnded</code></td>
+<td>1</td>
+<td>failed, cancelled, or open again after the hunter died (1 / 0)</td>
+</tr>
 </tbody>
 </table>
-<h3 id="courier-contracts">Courier contracts<a class="headerlink" href="#courier-contracts" title="Permanent link">#</a></h3>
+<h3 id="quests-and-missions">Quests And Missions<a class="headerlink" href="#quests-and-missions" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quests on the tablet</td>
+<td><code>QuestsTabEnabled</code></td>
+<td>1</td>
+<td>F7 &gt; Contracts &gt; QUESTS lists Expansion quests (1 / 0)</td>
+</tr>
+<tr>
+<td>Quest money to the bank</td>
+<td><code>QuestCashToBank</code></td>
+<td>1</td>
+<td>money rewards from Expansion quests are paid into the bank (1 / 0)</td>
+</tr>
+<tr>
+<td>Start quests on the tablet</td>
+<td><code>QuestTabletAccept</code></td>
+<td>1</td>
+<td>1 = players can start quests from F7, 0 = only at the quest NPC</td>
+</tr>
+<tr>
+<td>Hand in on the tablet</td>
+<td><code>QuestTabletTurnIn</code></td>
+<td>0</td>
+<td>1 = finished quests can be handed in from F7, 0 = go back to the NPC</td>
+</tr>
+<tr>
+<td>Show running missions</td>
+<td><code>QuestShowMissions</code></td>
+<td>1</td>
+<td>airdrops and AI missions running now (1 / 0)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="economy">Economy<a class="headerlink" href="#economy" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Days of history</td>
+<td><code>EconomyDays</code></td>
+<td>30</td>
+<td>kept for the economy dashboard</td>
+</tr>
+<tr>
+<td>Flag payments over</td>
+<td><code>EconomyAlertAmount</code></td>
+<td>100000</td>
+<td>one payment from the server this big shows under BIG PAYMENTS (0 = off)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="courier-contracts">Courier Contracts<a class="headerlink" href="#courier-contracts" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -592,6 +771,12 @@
 </thead>
 <tbody>
 <tr>
+<td>Cash on the tablet</td>
+<td><code>TabletCash</code></td>
+<td>1</td>
+<td>1 = deposit / withdraw cash anywhere from the tablet, 0 = only at an Expansion ATM</td>
+</tr>
+<tr>
 <td>Most money in one account</td>
 <td><code>BankMaxBalance</code></td>
 <td>500000000</td>
@@ -599,7 +784,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="online-pay">Online pay<a class="headerlink" href="#online-pay" title="Permanent link">#</a></h3>
+<h3 id="online-pay">Online Pay<a class="headerlink" href="#online-pay" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -636,7 +821,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="logs-and-tools">Logs and tools<a class="headerlink" href="#logs-and-tools" title="Permanent link">#</a></h3>
+<h3 id="logs-and-tools">Logs And Tools<a class="headerlink" href="#logs-and-tools" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -664,6 +849,12 @@
 <td><code>AuditTopCount</code></td>
 <td>50</td>
 <td>how many the base audit lists</td>
+</tr>
+<tr>
+<td>Server log detail</td>
+<td><code>LogVerbosity</code></td>
+<td>2</td>
+<td>0 errors, 1 + warnings, 2 + info, 3 + debug</td>
 </tr>
 </tbody>
 </table>
@@ -717,7 +908,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="parking-areas">Parking areas<a class="headerlink" href="#parking-areas" title="Permanent link">#</a></h3>
+<h3 id="parking-areas">Parking Areas<a class="headerlink" href="#parking-areas" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -772,7 +963,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="dealer-and-market">Dealer and market<a class="headerlink" href="#dealer-and-market" title="Permanent link">#</a></h3>
+<h3 id="dealer-and-market">Dealer And Market<a class="headerlink" href="#dealer-and-market" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -954,6 +1145,12 @@
 <td>1 = owners can't share vehicles with their Expansion group</td>
 </tr>
 <tr>
+<td>Groups share every vehicle</td>
+<td><code>GroupShareAll</code></td>
+<td>1</td>
+<td>1 = anyone in the owner's Expansion group can take out, store and drive the owner's vehicles (also ones a teammate stored)</td>
+</tr>
+<tr>
 <td>Store with contents</td>
 <td><code>StoreWithContents</code></td>
 <td>1</td>
@@ -961,7 +1158,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="impound-and-recovery">Impound and recovery<a class="headerlink" href="#impound-and-recovery" title="Permanent link">#</a></h3>
+<h3 id="impound-and-recovery">Impound And Recovery<a class="headerlink" href="#impound-and-recovery" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1126,7 +1323,86 @@
 </tr>
 </tbody>
 </table>
-<h3 id="combat-lock">Combat lock<a class="headerlink" href="#combat-lock" title="Permanent link">#</a></h3>
+<h3 id="taxi">Taxi<a class="headerlink" href="#taxi" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taxi</td>
+<td><code>TaxiEnabled</code></td>
+<td>1</td>
+<td>players ride to the stops made in GARAGE ADMIN &gt; TAXI (1/0)</td>
+</tr>
+<tr>
+<td>Fare</td>
+<td><code>TaxiFee</code></td>
+<td>5000</td>
+<td>to any stop (a stop can have its own)</td>
+</tr>
+<tr>
+<td>Extra per km</td>
+<td><code>TaxiFeePerKm</code></td>
+<td>0</td>
+<td>added for each km of the ride (0 = none)</td>
+</tr>
+<tr>
+<td>Wait between rides (s)</td>
+<td><code>TaxiCooldownSeconds</code></td>
+<td>120</td>
+<td></td>
+</tr>
+<tr>
+<td>Park the player's vehicle</td>
+<td><code>TaxiParksVehicle</code></td>
+<td>1</td>
+<td>1 = their vehicle in reach goes into the garage (at the nearest parking zone) before the ride</td>
+</tr>
+<tr>
+<td>Ride anywhere on the map</td>
+<td><code>TaxiAnywhere</code></td>
+<td>1</td>
+<td>players click a spot on the map (1/0)</td>
+</tr>
+<tr>
+<td>Map ride base fare</td>
+<td><code>TaxiAnywhereFee</code></td>
+<td>0</td>
+<td>plus the price per km</td>
+</tr>
+<tr>
+<td>No map rides within (km)</td>
+<td><code>TaxiNoGoKm</code></td>
+<td>2.0</td>
+<td>of a trader or point of interest (0 = off)</td>
+</tr>
+<tr>
+<td>Keep map rides away from traders</td>
+<td><code>TaxiNoGoTraders</code></td>
+<td>1</td>
+<td>(1/0)</td>
+</tr>
+<tr>
+<td>Points of interest</td>
+<td><code>TaxiNoGoPlaces</code></td>
+<td><em>MB</em>,<em>AF</em>,military,MB,RAF,FOB,airfield,airport,airstrip,airpark,prison,detention,bunker,outpost,checkpoint,flakturm,area 42</td>
+<td>comma list: words in the map's place names (whole words), place types, or <em>CODE</em> in class names</td>
+</tr>
+<tr>
+<td>Town / village radius (m)</td>
+<td><code>TaxiTownRadius</code></td>
+<td>400</td>
+<td>rides into a town or village ignore points of interest (0 = off)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combat-lock">Combat Lock<a class="headerlink" href="#combat-lock" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1170,7 +1446,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="map-and-messages">Map and messages<a class="headerlink" href="#map-and-messages" title="Permanent link">#</a></h3>
+<h3 id="map-and-messages">Map And Messages<a class="headerlink" href="#map-and-messages" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1286,6 +1562,507 @@
 </tr>
 </tbody>
 </table>
+<h2 id="stock-exchange-stockssettingsjson">Stock exchange (Stocks/Settings.json)<a class="headerlink" href="#stock-exchange-stockssettingsjson" title="Permanent link">#</a></h2>
+<p>Edited in game under <strong>F8 → STOCK EXCHANGE</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Enabled</code></td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><code>UpdateMinutes</code></td>
+<td>60</td>
+<td>one market hour</td>
+</tr>
+<tr>
+<td><code>MaxMovePercent</code></td>
+<td>4</td>
+<td>most a share can move in one update</td>
+</tr>
+<tr>
+<td><code>Volatility</code></td>
+<td>0.7</td>
+<td>0.5 = calmer, 2 = wild</td>
+</tr>
+<tr>
+<td><code>NewsPerWeek</code></td>
+<td>3</td>
+<td>big Business Wire stories a week</td>
+</tr>
+<tr>
+<td><code>NewsImpact</code></td>
+<td>1.0</td>
+<td>how hard news hits prices</td>
+</tr>
+<tr>
+<td><code>CrashChancePerDay</code></td>
+<td>3</td>
+<td>% chance a day of a market-wide crash</td>
+</tr>
+<tr>
+<td><code>FeePercent</code></td>
+<td>0.5</td>
+<td>per buy / sell</td>
+</tr>
+<tr>
+<td><code>MaxOrderValue</code></td>
+<td>100000</td>
+<td>most one order (investment) may cost</td>
+</tr>
+<tr>
+<td><code>MaxSharesPerOrder</code></td>
+<td>100000</td>
+<td></td>
+</tr>
+<tr>
+<td><code>MaxInvestCash</code></td>
+<td>2000000</td>
+<td>most cash in one stock account</td>
+</tr>
+<tr>
+<td><code>Dividends</code></td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><code>DividendHours</code></td>
+<td>168</td>
+<td>paid every week</td>
+</tr>
+<tr>
+<td><code>HistoryHours</code></td>
+<td>336</td>
+<td>price points kept (14 days)</td>
+</tr>
+<tr>
+<td><code>CatchUpHours</code></td>
+<td>168</td>
+<td>most updates made after downtime</td>
+</tr>
+<tr>
+<td><code>BreakingNews</code></td>
+<td>1</td>
+<td>big stories pop up for everyone online</td>
+</tr>
+<tr>
+<td><code>MinPrice</code></td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td><code>MaxPrice</code></td>
+<td>100000</td>
+<td></td>
+</tr>
+<tr>
+<td><code>MaxVsBase</code></td>
+<td>2.5</td>
+<td>a share never goes above 2.5x its normal value</td>
+</tr>
+<tr>
+<td><code>MinVsBase</code></td>
+<td>0.25</td>
+<td>... or below a quarter of it</td>
+</tr>
+<tr>
+<td><code>MaxDeposit</code></td>
+<td>100000</td>
+<td>most paid in at once</td>
+</tr>
+</tbody>
+</table>
+<h2 id="workshop-apps-profilesghostzqolplus">Workshop apps (profiles/GhostzQoLPlus)<a class="headerlink" href="#workshop-apps-profilesghostzqolplus" title="Permanent link">#</a></h2>
+<p>Edited in game under <strong>Workshop → Admin Control</strong> (or <strong>F8 → ALL TOOLS → QOL ADMIN CONTROL</strong>). Each app has its own file.</p>
+<h3 id="generaljson">General.json<a class="headerlink" href="#generaljson" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Modules</code></td>
+<td>all on</td>
+<td>each Workshop app on (1) or off (0): Inventory, Crafting, Repair, Drying, LootScanner, VehicleDashboard, GearValuation</td>
+</tr>
+<tr>
+<td><code>LoggingLevel</code></td>
+<td>1</td>
+<td>0 errors only, 1 normal, 2 more, 3 debug (every request and answer)</td>
+</tr>
+<tr>
+<td><code>RpcMinGapMs</code></td>
+<td>250</td>
+<td>shortest time between two requests from one player (100-5000 ms)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="inventoryjson-inventory-manager">Inventory.json – Inventory Manager<a class="headerlink" href="#inventoryjson-inventory-manager" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Radius</code></td>
+<td>3.0</td>
+<td>Metres around the player that count as nearby storage (1-10).</td>
+</tr>
+<tr>
+<td><code>RequireLineOfSight</code></td>
+<td>1</td>
+<td>1 = no access to storage behind walls.</td>
+</tr>
+<tr>
+<td><code>AllowNearbyContainers</code></td>
+<td>1</td>
+<td>1 = tents, barrels, crates etc. close to the player.</td>
+</tr>
+<tr>
+<td><code>AllowVehicleCargo</code></td>
+<td>1</td>
+<td>1 = cargo of the vehicle the player sits in.</td>
+</tr>
+<tr>
+<td><code>AllowNearbyVehicles</code></td>
+<td>0</td>
+<td>1 = cargo of unlocked vehicles within Radius.</td>
+</tr>
+<tr>
+<td><code>DriverStationaryOnly</code></td>
+<td>1</td>
+<td>1 = drivers only while the vehicle stands still.</td>
+</tr>
+<tr>
+<td><code>StationaryKmh</code></td>
+<td>2.0</td>
+<td>Speed below which a vehicle counts as stationary.</td>
+</tr>
+<tr>
+<td><code>MaxListItems</code></td>
+<td>300</td>
+<td>Most items listed per source (20-500).</td>
+</tr>
+<tr>
+<td><code>ExcludedContainers</code></td>
+<td>(empty)</td>
+<td>Comma list of class names never accessible.</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="repairsjson-repair-workshop">Repairs.json – Repair Workshop<a class="headerlink" href="#repairsjson-repair-workshop" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AllowRuined</code></td>
+<td>0</td>
+<td>1 = ruined items can be repaired (default 0).</td>
+</tr>
+<tr>
+<td><code>AllowWeapons</code></td>
+<td>1</td>
+<td>1 = weapons can be repaired.</td>
+</tr>
+<tr>
+<td><code>AllowClothing</code></td>
+<td>1</td>
+<td>1 = clothing can be repaired.</td>
+</tr>
+<tr>
+<td><code>AllowOther</code></td>
+<td>1</td>
+<td>1 = other equipment can be repaired.</td>
+</tr>
+<tr>
+<td><code>RepairAttachments</code></td>
+<td>0</td>
+<td>1 = attachments of the item are raised to the same stage.</td>
+</tr>
+<tr>
+<td><code>MaxStagesPerRepair</code></td>
+<td>3</td>
+<td>How many stages one repair may climb (1-3).</td>
+</tr>
+<tr>
+<td><code>ExcludedClasses</code></td>
+<td>(empty)</td>
+<td>Comma list of classes that can never be repaired.</td>
+</tr>
+<tr>
+<td><code>CostToDamaged</code></td>
+<td>500</td>
+<td>Cost (bank or cash): Badly damaged -&gt; Damaged (0 = free).</td>
+</tr>
+<tr>
+<td><code>CostToWorn</code></td>
+<td>1000</td>
+<td>Cost (bank or cash): Damaged -&gt; Worn.</td>
+</tr>
+<tr>
+<td><code>CostToPristine</code></td>
+<td>2000</td>
+<td>Cost (bank or cash): Worn -&gt; Pristine.</td>
+</tr>
+<tr>
+<td><code>ItemsToDamaged</code></td>
+<td>(empty)</td>
+<td>Items used for that stage, e.g. DuctTape:1, Rag:2.</td>
+</tr>
+<tr>
+<td><code>ItemsToWorn</code></td>
+<td>(empty)</td>
+<td>Items used for Damaged -&gt; Worn.</td>
+</tr>
+<tr>
+<td><code>ItemsToPristine</code></td>
+<td>(empty)</td>
+<td>Items used for Worn -&gt; Pristine.</td>
+</tr>
+<tr>
+<td><code>SecondsPerStage</code></td>
+<td>0</td>
+<td>Wait per stage before the item is repaired (0-600).</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dryingjson-drying-station">Drying.json – Drying Station<a class="headerlink" href="#dryingjson-drying-station" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fee</code></td>
+<td>0</td>
+<td>Cost per use of the dryer, paid by bank or cash (0 = free).</td>
+</tr>
+<tr>
+<td><code>MaxBatch</code></td>
+<td>10</td>
+<td>Most items dried in one use (1-50).</td>
+</tr>
+<tr>
+<td><code>CooldownSeconds</code></td>
+<td>30</td>
+<td>How often a player may use the dryer: seconds between uses (0-3600).</td>
+</tr>
+<tr>
+<td><code>AllowClothing</code></td>
+<td>1</td>
+<td>1 = clothing can be dried.</td>
+</tr>
+<tr>
+<td><code>AllowOther</code></td>
+<td>1</td>
+<td>1 = other wet items can be dried.</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="scannerjson-loot-scanner">Scanner.json – Loot Scanner<a class="headerlink" href="#scannerjson-loot-scanner" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Price</code></td>
+<td>5000</td>
+<td>Cost per scan, paid by bank or cash (see Payments). 0 = free.</td>
+</tr>
+<tr>
+<td><code>RadiusMetres</code></td>
+<td>100</td>
+<td>Scan radius (10-300 m).</td>
+</tr>
+<tr>
+<td><code>ScanSeconds</code></td>
+<td>6</td>
+<td>Length of the radar animation (2-30).</td>
+</tr>
+<tr>
+<td><code>HighlightSeconds</code></td>
+<td>60</td>
+<td>Marker lifetime: how long found loot stays marked in the world (5-600 s).</td>
+</tr>
+<tr>
+<td><code>CooldownSeconds</code></td>
+<td>600</td>
+<td>How often a player may scan: seconds between scans (10-86400, e.g. 600 = every 10 min).</td>
+</tr>
+<tr>
+<td><code>MaxResults</code></td>
+<td>40</td>
+<td>Most items marked per scan (1-100).</td>
+</tr>
+<tr>
+<td><code>ClosePdaOnFinish</code></td>
+<td>1</td>
+<td>1 = the PDA closes when the scan finishes.</td>
+</tr>
+<tr>
+<td><code>ShowDistance</code></td>
+<td>1</td>
+<td>1 = markers show the distance.</td>
+</tr>
+<tr>
+<td><code>Categories</code></td>
+<td>Weapons, Ammo, Medical, Food, Clothing, Tools, Building, Other</td>
+<td>Categories that are scanned: Weapons, Ammo, Medical, Food, Clothing, Tools, Building, Other.</td>
+</tr>
+<tr>
+<td><code>ExcludedClasses</code></td>
+<td>(empty)</td>
+<td>Comma list of classes never shown.</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="vehiclesjson-vehicle-dashboard">Vehicles.json – Vehicle Dashboard<a class="headerlink" href="#vehiclesjson-vehicle-dashboard" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ShowFluids</code></td>
+<td>1</td>
+<td>1 = fuel / oil / coolant / brake fluid levels.</td>
+</tr>
+<tr>
+<td><code>ShowParts</code></td>
+<td>1</td>
+<td>1 = installed / missing / damaged parts.</td>
+</tr>
+<tr>
+<td><code>PassengersAllowed</code></td>
+<td>1</td>
+<td>1 = passengers can use the dashboard too.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="valuationjson-gear-appraisal">Valuation.json – Gear Appraisal<a class="headerlink" href="#valuationjson-gear-appraisal" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IncludeAttachments</code></td>
+<td>1</td>
+<td>1 = attachments (scopes, mags on guns...) are valued.</td>
+</tr>
+<tr>
+<td><code>IncludeContents</code></td>
+<td>1</td>
+<td>1 = items inside clothing / backpacks / containers are valued.</td>
+</tr>
+<tr>
+<td><code>CacheSeconds</code></td>
+<td>10</td>
+<td>Reuse a player's valuation for this long (0-300).</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="stackingjson-stack-sizes">Stacking.json – Stack sizes<a class="headerlink" href="#stackingjson-stack-sizes" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AmmoPreset</code></td>
+<td>0</td>
+<td>Loose ammo stack: 0 (game default), 30, 50, 75, 100 or 200.</td>
+</tr>
+<tr>
+<td><code>ItemPreset</code></td>
+<td>0</td>
+<td>Other stackables (rags, nails...): 0 (default), 20, 30, 40 or 50.</td>
+</tr>
+<tr>
+<td><code>Overrides</code></td>
+<td>(empty)</td>
+<td>Per class, e.g. Nail=99, Ammo_9x19=120 (wins over presets).</td>
+</tr>
+<tr>
+<td><code>Exclusions</code></td>
+<td>(empty)</td>
+<td>Comma list of classes never changed.</td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
     </article>
     <nav class="pager"><a class="prev" href="garage-admin.html"><span>Previous</span>Garage admin</a><a class="next" href="files.html"><span>Next</span>Files and folders</a></nav>
     <footer class="foot">
@@ -1297,29 +2074,42 @@
     <p class="toc-title">On this page</p>
     <ul>
 <li class="l2"><a href="#main-settings-settingsjson">Main settings (Settings.json)</a></li>
-<li class="l3"><a href="#player-shops">Player shops</a></li>
-<li class="l3"><a href="#territory-rent">Territory rent</a></li>
-<li class="l3"><a href="#vehicle-rental">Vehicle rental</a></li>
-<li class="l3"><a href="#vehicle-tracker">Vehicle tracker</a></li>
+<li class="l3"><a href="#player-shops">Player Shops</a></li>
+<li class="l3"><a href="#territory-rent">Territory Rent</a></li>
+<li class="l3"><a href="#vehicle-rental">Vehicle Rental</a></li>
+<li class="l3"><a href="#vehicle-tracker">Vehicle Tracker</a></li>
 <li class="l3"><a href="#donations">Donations</a></li>
 <li class="l3"><a href="#bounties">Bounties</a></li>
-<li class="l3"><a href="#courier-contracts">Courier contracts</a></li>
+<li class="l3"><a href="#quests-and-missions">Quests And Missions</a></li>
+<li class="l3"><a href="#economy">Economy</a></li>
+<li class="l3"><a href="#courier-contracts">Courier Contracts</a></li>
 <li class="l3"><a href="#banking">Banking</a></li>
-<li class="l3"><a href="#online-pay">Online pay</a></li>
-<li class="l3"><a href="#logs-and-tools">Logs and tools</a></li>
+<li class="l3"><a href="#online-pay">Online Pay</a></li>
+<li class="l3"><a href="#logs-and-tools">Logs And Tools</a></li>
 <li class="l2"><a href="#garage-settings-garagejson">Garage settings (Garage.json)</a></li>
 <li class="l3"><a href="#garage">Garage</a></li>
-<li class="l3"><a href="#parking-areas">Parking areas</a></li>
-<li class="l3"><a href="#dealer-and-market">Dealer and market</a></li>
+<li class="l3"><a href="#parking-areas">Parking Areas</a></li>
+<li class="l3"><a href="#dealer-and-market">Dealer And Market</a></li>
 <li class="l3"><a href="#service">Service</a></li>
 <li class="l3"><a href="#ownership">Ownership</a></li>
-<li class="l3"><a href="#impound-and-recovery">Impound and recovery</a></li>
+<li class="l3"><a href="#impound-and-recovery">Impound And Recovery</a></li>
 <li class="l3"><a href="#towing">Towing</a></li>
 <li class="l3"><a href="#services">Services</a></li>
-<li class="l3"><a href="#combat-lock">Combat lock</a></li>
+<li class="l3"><a href="#taxi">Taxi</a></li>
+<li class="l3"><a href="#combat-lock">Combat Lock</a></li>
 <li class="l3"><a href="#rentals">Rentals</a></li>
-<li class="l3"><a href="#map-and-messages">Map and messages</a></li>
+<li class="l3"><a href="#map-and-messages">Map And Messages</a></li>
 <li class="l3"><a href="#discord">Discord</a></li>
+<li class="l2"><a href="#stock-exchange-stockssettingsjson">Stock exchange (Stocks/Settings.json)</a></li>
+<li class="l2"><a href="#workshop-apps-profilesghostzqolplus">Workshop apps (profiles/GhostzQoLPlus)</a></li>
+<li class="l3"><a href="#generaljson">General.json</a></li>
+<li class="l3"><a href="#inventoryjson-inventory-manager">Inventory.json – Inventory Manager</a></li>
+<li class="l3"><a href="#repairsjson-repair-workshop">Repairs.json – Repair Workshop</a></li>
+<li class="l3"><a href="#dryingjson-drying-station">Drying.json – Drying Station</a></li>
+<li class="l3"><a href="#scannerjson-loot-scanner">Scanner.json – Loot Scanner</a></li>
+<li class="l3"><a href="#vehiclesjson-vehicle-dashboard">Vehicles.json – Vehicle Dashboard</a></li>
+<li class="l3"><a href="#valuationjson-gear-appraisal">Valuation.json – Gear Appraisal</a></li>
+<li class="l3"><a href="#stackingjson-stack-sizes">Stacking.json – Stack sizes</a></li>
     </ul>
   </aside>
 </div>

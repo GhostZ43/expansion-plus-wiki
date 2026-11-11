@@ -7,9 +7,11 @@
 <meta name="description" content="Admin panel F8 Admins press F8 . Every change is saved on the server at once. Dangerous buttons delete, wipe need a second click , and every admin action i">
 <meta property="og:title" content="Admin panel | Expansion Plus Wiki">
 <meta property="og:description" content="Admin panel F8 Admins press F8 . Every change is saved on the server at once. Dangerous buttons delete, wipe need a second click , and every admin action i">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html" class="active" aria-current="page">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -67,7 +92,52 @@
     <p class="crumb">Admins</p>
     <article class="doc">
 <h1 id="admin-panel-f8">Admin panel (F8)<a class="headerlink" href="#admin-panel-f8" title="Permanent link">#</a></h1>
-<p>Admins press <strong>F8</strong>. Every change is saved on the server at once. Dangerous buttons (delete, wipe) need a <strong>second click</strong>, and every admin action is written to <code>GhostzSuite.log</code> with the admin's name.</p>
+<p>Admins press <strong>F8</strong>. Every change is saved on the server at once. Dangerous buttons (delete, wipe) need a <strong>second click</strong>, and every admin action is logged with the admin's name.</p>
+<h2 id="all-tools">ALL TOOLS<a class="headerlink" href="#all-tools" title="Permanent link">#</a></h2>
+<p>The first tab lists every admin page, grouped like the player hubs:</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finance</td>
+<td>BANKING, STOCK EXCHANGE, ECONOMY</td>
+</tr>
+<tr>
+<td>Garage</td>
+<td>GARAGE ADMIN, RENTALS, TRACKERS</td>
+</tr>
+<tr>
+<td>Workshop</td>
+<td>QOL ADMIN CONTROL (<a href="workshop-admin.html">Workshop admin</a>)</td>
+</tr>
+<tr>
+<td>Trade</td>
+<td>SHOPS, MARKET, RESTOCK, TRADE LOG</td>
+</tr>
+<tr>
+<td>Jobs</td>
+<td>CONTRACTS</td>
+</tr>
+<tr>
+<td>Territory</td>
+<td>TERRITORY, AUDIT, CONTROL ZONES</td>
+</tr>
+<tr>
+<td>Intel</td>
+<td>MAP MARKERS, QOL ADMIN CONTROL (scanner)</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>SETTINGS, PLAYERS, INBOX, INFO, APPS, ADMIN LOG, FILES</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tabs">Tabs<a class="headerlink" href="#tabs" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
@@ -82,7 +152,7 @@
 </tr>
 <tr>
 <td>INFO</td>
-<td>Edit the F9 page; reset all stats</td>
+<td>Edit the F9 page and the tablet's Links; reset all stats</td>
 </tr>
 <tr>
 <td>SETTINGS</td>
@@ -114,7 +184,7 @@
 </tr>
 <tr>
 <td>PLAYERS</td>
-<td>Bank accounts: set a balance, wipe bank, territories or everything</td>
+<td>Bank accounts: set a balance, <strong>GIVE MONEY</strong> with a reason, wipe bank, territories or everything</td>
 </tr>
 <tr>
 <td>TRADE LOG</td>
@@ -129,20 +199,73 @@
 <td><a href="restock.html">Restock a trader</a></td>
 </tr>
 <tr>
+<td>ECONOMY</td>
+<td>Money in circulation, created and destroyed per day, top earners, big-payment alerts</td>
+</tr>
+<tr>
+<td>ADMIN LOG</td>
+<td>Every admin action, with search and <strong>UNDO</strong> for bank changes, wipes, money given, restocks and shop funds</td>
+</tr>
+<tr>
 <td>FILES</td>
-<td>Line-by-line editor for <code>.json</code> and <code>.map</code> files in <code>profiles/ExpansionMod</code> and <code>mission/expansion</code></td>
+<td>Editor for Expansion's <code>.json</code> and <code>.map</code> files, with real JSON checks and a backup before every save</td>
 </tr>
 </tbody>
 </table>
-<p>The footer opens <strong>BANKING</strong>, <strong>CONTROL ZONES</strong>, <strong>MAP MARKERS</strong> and <strong><a href="garage-admin.html">GARAGE ADMIN</a></strong>.</p>
+<p>The footer opens <strong>BANKING</strong>, <strong>CONTROL ZONES</strong>, <strong>MAP MARKERS</strong>, <strong>APPS</strong>, <strong>STOCK EXCHANGE</strong>, <strong><a href="garage-admin.html">GARAGE ADMIN</a></strong> and <strong>TABLET HOME</strong>.</p>
+<h2 id="admin-roles">Admin roles<a class="headerlink" href="#admin-roles" title="Permanent link">#</a></h2>
+<p><code>Admins</code> in <code>Settings.json</code> are full admins. Optional <code>AdminRoles</code> give narrower admins only their part of F8:</p>
+<pre><code class="language-json">&quot;AdminRoles&quot;: [ { &quot;Steam64&quot;: &quot;76561198000000000&quot;, &quot;Role&quot;: &quot;economy&quot; } ]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Can use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>owner, full</td>
+<td>Everything</td>
+</tr>
+<tr>
+<td>senior</td>
+<td>Everything except the admin list</td>
+</tr>
+<tr>
+<td>moderator</td>
+<td>Players, tickets, logs</td>
+</tr>
+<tr>
+<td>event</td>
+<td>World tools, tickets</td>
+</tr>
+<tr>
+<td>vehicle</td>
+<td>Vehicles</td>
+</tr>
+<tr>
+<td>economy</td>
+<td>Economy, market, shops</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>View only</td>
+</tr>
+</tbody>
+</table>
+<p>Every action is checked on the server and refusals are logged. Optional <code>UseAdminPlusRights</code> links roles to <strong>Admin Plus</strong> rights (off by default). The same list also decides who can use the <a href="workshop-admin.html">Workshop admin</a>.</p>
+<h2 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">#</a></h2>
+<p><strong>F8 → APPS</strong> locks any tablet app: players lose it, admins keep it (marked <strong>(locked)</strong>). It also sets whether players can deposit and withdraw cash anywhere or only at Expansion ATMs.</p>
 <h2 id="control-zones">Control zones<a class="headerlink" href="#control-zones" title="Permanent link">#</a></h2>
-<p>Add zones with a name, type, kind (income), radius (10–2000 m) and colour, centred where you stand or picked on the map. <strong>EDIT</strong>, <strong>DELETE</strong>, <strong>FREE IT</strong> and <strong>PAY NOW</strong>. Settings cover incomes, minutes to take, bonus %, payout hours and split or full pay.</p>
+<p>Add zones with a name, kind, radius (10–2000 m) and colour, centred where you stand or picked on the map. <strong>EDIT</strong>, <strong>DELETE</strong>, <strong>FREE IT</strong> and <strong>PAY NOW</strong>. Settings cover incomes, minutes to take, bonus %, payout hours, split or full pay, and production.</p>
 <h2 id="map-markers">Map markers<a class="headerlink" href="#map-markers" title="Permanent link">#</a></h2>
-<p>Add, edit and delete Expansion server markers: a name, a position (or <strong>USE MY POSITION</strong>), an icon from Expansion's full icon list with pictures and a search, a colour slider, and map, world or both. They're saved into Expansion's <code>MapSettings.json</code>.</p>
+<p>Add, edit and delete Expansion server markers: a name, a position (or <strong>USE MY POSITION</strong>), an icon from Expansion's full icon list with pictures and a search, a colour slider, and map, world or both. Saved into Expansion's <code>MapSettings.json</code>.</p>
 <h2 id="server-info">Server info<a class="headerlink" href="#server-info" title="Permanent link">#</a></h2>
-<p><strong>F8 → INFO</strong> edits the F9 page: title, welcome lines, rules, wipes, restart times, events and links. <strong>RESET ALL STATS</strong> starts every player's stats again; <strong>PREVIEW</strong> shows the page.</p>
+<p><strong>F8 → INFO</strong> edits the F9 page (title, welcome lines, rules, wipes, restart times, events, links) and the tablet's <strong>Links</strong> button. <strong>RESET ALL STATS</strong> starts every player's stats again; <strong>PREVIEW</strong> shows the page.</p>
     </article>
-    <nav class="pager"><a class="prev" href="community.html"><span>Previous</span>Donations, players and info</a><a class="next" href="restock.html"><span>Next</span>Restock a trader</a></nav>
+    <nav class="pager"><a class="prev" href="messages.html"><span>Previous</span>Messages</a><a class="next" href="workshop-admin.html"><span>Next</span>Workshop admin</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -151,6 +274,10 @@
   <aside class="toc">
     <p class="toc-title">On this page</p>
     <ul>
+<li class="l2"><a href="#all-tools">ALL TOOLS</a></li>
+<li class="l2"><a href="#tabs">Tabs</a></li>
+<li class="l2"><a href="#admin-roles">Admin roles</a></li>
+<li class="l2"><a href="#apps">Apps</a></li>
 <li class="l2"><a href="#control-zones">Control zones</a></li>
 <li class="l2"><a href="#map-markers">Map markers</a></li>
 <li class="l2"><a href="#server-info">Server info</a></li>

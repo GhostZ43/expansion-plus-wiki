@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Introduction | Expansion Plus Wiki</title>
-<meta name="description" content="Expansion Plus Expansion Plus is an all-in-one add-on for DayZ Expansion servers. Banking, a vehicle garage, player shops, territory rent, vehicle rentals,">
+<meta name="description" content="Expansion Plus Expansion Plus is the all-in-one add-on for DayZ Expansion servers. Banking, a stock exchange, a full vehicle garage, player shops, territor">
 <meta property="og:title" content="Introduction | Expansion Plus Wiki">
-<meta property="og:description" content="Expansion Plus Expansion Plus is an all-in-one add-on for DayZ Expansion servers. Banking, a vehicle garage, player shops, territory rent, vehicle rentals,">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Expansion Plus Expansion Plus is the all-in-one add-on for DayZ Expansion servers. Banking, a stock exchange, a full vehicle garage, player shops, territor">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html" class="active" aria-current="page">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -67,14 +92,16 @@
     <p class="crumb">Getting started</p>
     <article class="doc">
 <h1 id="expansion-plus">Expansion Plus<a class="headerlink" href="#expansion-plus" title="Permanent link">#</a></h1>
-<p><strong>Expansion Plus</strong> is an all-in-one add-on for <strong>DayZ Expansion</strong> servers. Banking, a vehicle garage, player shops, territory rent, vehicle rentals, messaging, courier contracts, control zones, bounties and a full admin panel, all on one in-game tablet.</p>
+<p class="hero"><img class="only-dark" src="banner-dark.svg" alt="Expansion Plus on the Ghostz Tab 10.1"><img class="only-light" src="banner-light.svg" alt="Expansion Plus on the Ghostz Tab 10.1"></p>
+
+<p><strong>Expansion Plus</strong> is the all-in-one add-on for <strong>DayZ Expansion</strong> servers. Banking, a stock exchange, a full vehicle garage, player shops, territory rent, courier jobs, bounties, conflict zones, messaging and the <strong>Workshop</strong> survival tools, all on one in-game device: the <strong>Ghostz Tab 10.1</strong>. Admins run everything from the same tablet.</p>
 <div class="cards">
 <a class="card" href="getting-started.html"><b>Getting started</b><span>Requirements, install and your first admin</span></a>
-<a class="card" href="tablet.html"><b>The tablet</b><span>Apps, keys and player settings</span></a>
-<a class="card" href="bank.html"><b>Player features</b><span>Bank, garage, shops, contracts and more</span></a>
+<a class="card" href="updating.html"><b>Updating to 1.20</b><span>Coming from Ghostz QoL Plus or an older version</span></a>
+<a class="card" href="tablet.html"><b>The tablet</b><span>Hubs, keys, Back / Home / Forward, settings</span></a>
+<a class="card" href="inventory.html"><b>Workshop apps</b><span>Inventory, crafting, repair, drying, appraisal</span></a>
 <a class="card" href="admin.html"><b>Admin panel</b><span>Everything admins can do with F8</span></a>
 <a class="card" href="settings.html"><b>Settings</b><span>Every setting with its default</span></a>
-<a class="card" href="troubleshooting.html"><b>Troubleshooting</b><span>Fixes for common problems</span></a>
 </div>
 
 <h2 id="at-a-glance">At a glance<a class="headerlink" href="#at-a-glance" title="Permanent link">#</a></h2>
@@ -88,7 +115,7 @@
 <tbody>
 <tr>
 <td>Current version</td>
-<td><strong>1.13.2</strong></td>
+<td><strong>1.20.0</strong></td>
 </tr>
 <tr>
 <td>Workshop ID</td>
@@ -99,8 +126,8 @@
 <td>CF, Dabs Framework, DayZ-Expansion-Licensed, DayZ-Expansion-Bundle</td>
 </tr>
 <tr>
-<td>Player menu</td>
-<td><strong>F7</strong> (the tablet)</td>
+<td>Tablet</td>
+<td><strong>F7</strong> (Workshop hub: <strong>F5</strong>)</td>
 </tr>
 <tr>
 <td>Admin panel</td>
@@ -111,25 +138,69 @@
 <td><strong>F9</strong></td>
 </tr>
 <tr>
+<td>Garage</td>
+<td><strong>K</strong></td>
+</tr>
+<tr>
 <td>Support</td>
 <td><a href="https://discord.gg/waZrD357wZ">Discord</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="whats-in-it">What's in it<a class="headerlink" href="#whats-in-it" title="Permanent link">#</a></h2>
+<div class="callout note">
+<p class="callout-title">Note</p>
+<p><strong>Ghostz QoL Plus is built into Expansion Plus since 1.20.0.</strong> Don't load <code>@GhostzQoLPlus</code> as well. See <a href="updating.html">Updating to 1.20</a>.</p>
+</div>
+<h2 id="the-hubs">The hubs<a class="headerlink" href="#the-hubs" title="Permanent link">#</a></h2>
+<p>The tablet's home screen groups every app into hubs:</p>
+<table>
+<thead>
+<tr>
+<th>Hub</th>
+<th>Apps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Finance</strong></td>
+<td><a href="bank.html">Bank</a>, <a href="stock-exchange.html">Stock Exchange</a></td>
+</tr>
+<tr>
+<td><strong>Garage</strong></td>
+<td><a href="garage.html">Garage</a>, <a href="taxi.html">Taxi</a>, <a href="rentals.html">Rentals &amp; Tracker</a>, <a href="vehicle-dashboard.html">Vehicle Dashboard</a></td>
+</tr>
+<tr>
+<td><strong>Workshop</strong></td>
+<td><a href="inventory.html">Inventory</a>, <a href="crafting.html">Crafting</a>, <a href="repair.html">Repair</a>, <a href="drying.html">Drying</a>, <a href="appraisal.html">Appraisal</a></td>
+</tr>
+<tr>
+<td><strong>Trade</strong></td>
+<td><a href="shops.html">Player shops</a>, <a href="community.html">Donations</a></td>
+</tr>
+<tr>
+<td><strong>Jobs</strong></td>
+<td><a href="contracts.html">Courier contracts and quests</a>, <a href="bounties.html">Bounties</a></td>
+</tr>
+<tr>
+<td><strong>Territory</strong></td>
+<td><a href="territory-rent.html">Territory rent</a>, <a href="control-zones.html">Conflict zones</a></td>
+</tr>
+<tr>
+<td><strong>Intel</strong></td>
+<td><a href="loot-scanner.html">Loot Scanner</a></td>
+</tr>
+<tr>
+<td><strong>Social</strong></td>
+<td><a href="messages.html">Messages</a>, notifications, leaderboards, reviews, <a href="community.html">server info</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="safe-by-design">Safe by design<a class="headerlink" href="#safe-by-design" title="Permanent link">#</a></h2>
 <ul>
-<li><strong>Banking</strong> – deposits, savings with interest, group accounts, transfers, loans, and pay for time online.</li>
-<li><strong>Garage</strong> – store and take out vehicles with their cargo, locks, a dealer, a player market, repairs, insurance and parking zones.</li>
-<li><strong>Player shops</strong> – players place their own shop and trade by bank transfer.</li>
-<li><strong>Territory rent</strong> – territories pay daily rent by base size.</li>
-<li><strong>Vehicle rental and tracker</strong> – rent vehicles at traders; track your own on the map.</li>
-<li><strong>Messages</strong> – a messenger with contacts, blocking, reports and admin calls.</li>
-<li><strong>Courier contracts</strong> – carry crates for pay, steal other couriers' crates.</li>
-<li><strong>Control zones</strong> – hold zones for daily income.</li>
-<li><strong>Bounties</strong> – put a price on another player's head.</li>
-<li><strong>Admin panel</strong> – market editor, trader restock, map markers, wipes, logs and more.</li>
+<li>The server builds every screen and checks every click. Players can't fake money, prices or items.</li>
+<li>Every file is saved with a verified backup. Damaged files are kept aside, never reset.</li>
+<li>Every charge and refund lands in the player's <strong>Transactions</strong>.</li>
 </ul>
-<p>Everything is checked and done on the server: players can't fake money, prices or items.</p>
     </article>
     <nav class="pager"><span></span><a class="next" href="getting-started.html"><span>Next</span>Getting started</a></nav>
     <footer class="foot">
@@ -141,7 +212,8 @@
     <p class="toc-title">On this page</p>
     <ul>
 <li class="l2"><a href="#at-a-glance">At a glance</a></li>
-<li class="l2"><a href="#whats-in-it">What's in it</a></li>
+<li class="l2"><a href="#the-hubs">The hubs</a></li>
+<li class="l2"><a href="#safe-by-design">Safe by design</a></li>
     </ul>
   </aside>
 </div>

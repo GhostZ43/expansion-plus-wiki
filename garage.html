@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Garage | Expansion Plus Wiki</title>
-<meta name="description" content="Garage Tablet → Garage EP Garage Services . Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure them. Storing a">
+<meta name="description" content="Garage Garage → Garage EP Garage Services , or press K . Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure th">
 <meta property="og:title" content="Garage | Expansion Plus Wiki">
-<meta property="og:description" content="Garage Tablet → Garage EP Garage Services . Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure them. Storing a">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Garage Garage → Garage EP Garage Services , or press K . Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure th">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html" class="active" aria-current="page">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -64,16 +89,16 @@
 </ul></div>
   </aside>
   <main class="content">
-    <p class="crumb">Player features</p>
+    <p class="crumb">Garage</p>
     <article class="doc">
 <h1 id="garage">Garage<a class="headerlink" href="#garage" title="Permanent link">#</a></h1>
-<p><strong>Tablet → Garage</strong> (EP Garage Services). Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure them.</p>
+<p><strong>Garage → Garage</strong> (EP Garage Services), or press <strong>K</strong>. Store your vehicles safely, take them out where you need them, and buy, sell, repair and insure them.</p>
 <h2 id="storing-and-taking-out">Storing and taking out<a class="headerlink" href="#storing-and-taking-out" title="Permanent link">#</a></h2>
 <ul>
-<li><strong>STORE VEHICLE</strong> stores a vehicle of yours within <strong>12 m</strong>, with its cargo.</li>
+<li><strong>STORE VEHICLE</strong> stores a vehicle of yours within <strong>12 m</strong>, with its parts, fluids, damage and cargo exactly as they were.</li>
 <li><strong>Park vehicle (garage)</strong> in the scroll menu parks the vehicle you're looking at, with the same rules.</li>
 <li><strong>TAKE OUT</strong> brings it back at a spot you aim at, <strong>4 to 15 m</strong> away (boats need water and get double the range).</li>
-<li>Vehicles come out with <strong>the fluid levels they were parked with</strong>.</li>
+<li>Vehicles come out with <strong>the fluid levels they were parked with</strong>, standing on top of slabs, ramps or floors (never under them). A vehicle that drops through the ground in its first 5 seconds is put back.</li>
 <li><strong>Combat lock</strong>: no parking within 30 seconds of a hit or shot, or with an enemy within 100 m.</li>
 <li>Each player can own <strong>10 vehicles</strong> by default, counting every vehicle they own anywhere.</li>
 </ul>
@@ -89,7 +114,7 @@
 </ul>
 <p>Admins can switch to Expansion car keys (<code>VehicleLockSystem</code> = <code>keys</code>) or turn locks off (<code>off</code>).</p>
 <h2 id="sharing-with-your-group">Sharing with your group<a class="headerlink" href="#sharing-with-your-group" title="Permanent link">#</a></h2>
-<p>Every vehicle has <strong>SHARE WITH MY GROUP: YES / NO</strong>. With YES, every member of your <strong>Expansion group</strong> can take it out, park it (it stays yours) and lock or unlock it. Selling, giving and insuring stay with the owner.</p>
+<p><strong>Group sharing is on by default</strong>: anyone in the owner's <strong>Expansion group</strong> can take out, store and drive the owner's vehicles, including ones a teammate stored. Selling, giving and insuring stay with the owner. You can also share a vehicle with up to 5 other players. Admins can turn group sharing off (<code>NoPartySharing</code>) to go back to per-vehicle sharing.</p>
 <h2 id="dealer-and-player-market">Dealer and player market<a class="headerlink" href="#dealer-and-player-market" title="Permanent link">#</a></h2>
 <ul>
 <li><strong>Dealer</strong> – buy and sell vehicles at Expansion market prices at any trader (50 m). Damage and missing parts come off the price.</li>
@@ -129,8 +154,14 @@
 </table>
 <h2 id="impound-and-towing">Impound and towing<a class="headerlink" href="#impound-and-towing" title="Permanent link">#</a></h2>
 <p>Admins can turn on a <strong>parking meter</strong> (unused vehicles get impounded) and <strong>towing</strong> (vehicles left outside parking areas get towed after 120 minutes unused, with a fee and a warning). Impounded vehicles are released from the garage for their fee.</p>
+<h2 id="taxi-and-dashboard">Taxi and dashboard<a class="headerlink" href="#taxi-and-dashboard" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>TAXI</strong> takes you to a stop or a spot on the map: see <a href="taxi.html">Taxi</a>.</li>
+<li><strong>Garage → Dashboard</strong> shows the vehicle you're in: see <a href="vehicle-dashboard.html">Vehicle Dashboard</a>.</li>
+<li>Cruise control and the boat radar are on <a href="getting-started.html#cruise-control">Getting started</a>.</li>
+</ul>
     </article>
-    <nav class="pager"><a class="prev" href="bank.html"><span>Previous</span>Bank and online pay</a><a class="next" href="rentals.html"><span>Next</span>Rentals and tracker</a></nav>
+    <nav class="pager"><a class="prev" href="stock-exchange.html"><span>Previous</span>Stock exchange</a><a class="next" href="taxi.html"><span>Next</span>Taxi</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -146,6 +177,7 @@
 <li class="l2"><a href="#dealer-and-player-market">Dealer and player market</a></li>
 <li class="l2"><a href="#services">Services</a></li>
 <li class="l2"><a href="#impound-and-towing">Impound and towing</a></li>
+<li class="l2"><a href="#taxi-and-dashboard">Taxi and dashboard</a></li>
     </ul>
   </aside>
 </div>

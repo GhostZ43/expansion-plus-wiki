@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The tablet | Expansion Plus Wiki</title>
-<meta name="description" content="The tablet Press F7 to open the Expansion Plus tablet. Its HOME screen has a tile for every feature the server has turned on. Each app opens its own brande">
+<meta name="description" content="The Ghostz Tab 10.1 Press F7 to pick up the tablet. It&#x27;s a physical device: an aluminium rim, black glass, Ghostz Tab 10.1 printed on the top bezel with th">
 <meta property="og:title" content="The tablet | Expansion Plus Wiki">
-<meta property="og:description" content="The tablet Press F7 to open the Expansion Plus tablet. Its HOME screen has a tile for every feature the server has turned on. Each app opens its own brande">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="The Ghostz Tab 10.1 Press F7 to pick up the tablet. It&#x27;s a physical device: an aluminium rim, black glass, Ghostz Tab 10.1 printed on the top bezel with th">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html" class="active" aria-current="page">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -66,68 +91,80 @@
   <main class="content">
     <p class="crumb">Getting started</p>
     <article class="doc">
-<h1 id="the-tablet">The tablet<a class="headerlink" href="#the-tablet" title="Permanent link">#</a></h1>
-<p>Press <strong>F7</strong> to open the Expansion Plus tablet. Its <strong>HOME</strong> screen has a tile for every feature the server has turned on. Each app opens its own branded screen (EP Bank, EP Garage Services, EP Retail, EP Land Registry, EP Messenger and more), and <strong>HOME</strong> at the top of any app brings you back.</p>
-<h2 id="apps">Apps<a class="headerlink" href="#apps" title="Permanent link">#</a></h2>
+<h1 id="the-ghostz-tab-101">The Ghostz Tab 10.1<a class="headerlink" href="#the-ghostz-tab-101" title="Permanent link">#</a></h1>
+<p>Press <strong>F7</strong> to pick up the tablet. It's a physical device: an aluminium rim, black glass, <strong>Ghostz Tab 10.1</strong> printed on the top bezel with the camera beside it, power and volume buttons on the top edge, and three keys on the bottom bezel.</p>
+<h2 id="back-home-and-forward">Back, Home and Forward<a class="headerlink" href="#back-home-and-forward" title="Permanent link">#</a></h2>
 <table>
 <thead>
 <tr>
-<th>App</th>
-<th>What it opens</th>
+<th>Key</th>
+<th>Does</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Banking</td>
-<td>Bank, savings, group account, transfers, loans</td>
+<td><strong>◁ Back</strong></td>
+<td>Goes to the previous screen. Inside an app, its own sub-panel closes first</td>
+</tr>
+<tr>
+<td><strong>○ Home</strong></td>
+<td>Goes to the home screen</td>
+</tr>
+<tr>
+<td><strong>▷ Forward</strong></td>
+<td>Goes to the screen you just came back from</td>
+</tr>
+</tbody>
+</table>
+<p>The keys light up under the mouse. History covers the home screen, hubs, every app page (Bank, Garage...), the Workshop apps and admin pages. <strong>Esc</strong> also goes back inside an app.</p>
+<h2 id="home-screen">Home screen<a class="headerlink" href="#home-screen" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Status bar</strong>: clock, your bank and cash, and whether rent and rentals are paid from BANK or CASH.</li>
+<li><strong>Header</strong>: your name and live <strong>water, temperature, health, food and stamina</strong> squares, refreshed every 2 seconds.</li>
+<li><strong>Left menu</strong>: Home, Settings, Help, About, Links, Logout.</li>
+<li><strong>Hubs</strong>: one big tile per hub. A hub with only one app opens that app straight away (for example the Loot Scanner).</li>
+<li><strong>Quick Status</strong>: a strip with anything worth acting on, such as new messages, crafted items ready to collect, or the loot scanner ready or recharging.</li>
+<li><strong>Stat bars</strong> along the bottom.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Hub</th>
+<th>Apps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finance</td>
+<td>Banking, Stock Exchange</td>
 </tr>
 <tr>
 <td>Garage</td>
-<td>Your vehicles, the dealer, the player market, services</td>
+<td>Garage, Rentals, Tracker, Dashboard</td>
 </tr>
 <tr>
-<td>Shops / My Shop</td>
-<td>Browse player shops; run your own</td>
+<td>Workshop</td>
+<td>Inventory, Crafting, Repair, Drying, Appraisal</td>
 </tr>
 <tr>
-<td>Territories</td>
-<td>Rent for your territory</td>
+<td>Trade</td>
+<td>Shops, My Shop, Donations</td>
 </tr>
 <tr>
-<td>Messages</td>
-<td>Messenger, contacts and admin calls (unread count on the tile)</td>
+<td>Jobs</td>
+<td>Contracts, Bounties</td>
 </tr>
 <tr>
-<td>Contracts</td>
-<td>Courier job board</td>
+<td>Territory</td>
+<td>Territories, Zones</td>
 </tr>
 <tr>
-<td>Bounties</td>
-<td>Post and hunt bounties (when admins turn it on)</td>
+<td>Intel</td>
+<td>Loot Scanner</td>
 </tr>
 <tr>
-<td>Zones</td>
-<td>Territory control zones</td>
-</tr>
-<tr>
-<td>Rentals</td>
-<td>Rent a vehicle near a trader</td>
-</tr>
-<tr>
-<td>Donations</td>
-<td>The free item box near traders</td>
-</tr>
-<tr>
-<td>Leaderboards / Reviews</td>
-<td>Player stats, rankings and reviews</td>
-</tr>
-<tr>
-<td>Server Info</td>
-<td>The F9 info page</td>
-</tr>
-<tr>
-<td>Backgrounds</td>
-<td>Pick the tablet's background picture</td>
+<td>Social</td>
+<td>Messages, Notifications, Leaderboards, Reviews, Server Info</td>
 </tr>
 <tr>
 <td>Admin</td>
@@ -135,25 +172,31 @@
 </tr>
 </tbody>
 </table>
-<p>The home screen also shows your <strong>water, food, health, stamina and temperature</strong>, refreshed every 2 seconds.</p>
-<h2 id="tablet-settings">Tablet settings<a class="headerlink" href="#tablet-settings" title="Permanent link">#</a></h2>
-<p><strong>HOME → SETTINGS</strong> holds each player's own choices:</p>
+<p>Apps an admin has locked are hidden from players (admins see them marked <strong>(locked)</strong>). Hubs with no apps left are hidden.</p>
+<h2 id="workshop-apps-inside-the-tablet">Workshop apps inside the tablet<a class="headerlink" href="#workshop-apps-inside-the-tablet" title="Permanent link">#</a></h2>
+<p>The Workshop apps (and the Loot Scanner and Vehicle Dashboard) open <strong>inside the tablet's own screen</strong>: the header shows the app's name, messages appear in the status bar, and the bezel keys work as usual. <strong>F5</strong> opens the tablet on the Workshop hub.</p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">#</a></h2>
+<p><strong>Left menu → Settings</strong> holds each player's own choices:</p>
 <ul>
-<li><strong>Tablet background</strong> – <strong>CHANGE</strong> picks one of 10 pictures.</li>
-<li><strong>Pay from bank or cash</strong> – <strong>SWITCH BANK / CASH</strong> sets where rent and rentals are paid from. Player shops always use bank transfer.</li>
-<li><strong>New message sound</strong> – <strong>CHANGE</strong> opens a scrolling list (mouse wheel or UP / DOWN). Pick <strong>OFF</strong>, the Expansion Plus chime (the default) or one of 24 game sounds. <strong>PLAY</strong> previews a sound; clicking a row picks it. It's used for messages, admin answers and bounty alerts.</li>
+<li><strong>Background</strong> – 10 pictures to choose from.</li>
+<li><strong>Pay from bank or cash</strong> – <strong>SWITCH BANK / CASH</strong> sets where rent, rentals and Workshop fees are paid from first. Player shops always use bank transfer.</li>
+<li><strong>New message sound</strong> – OFF, the Expansion Plus chime (default) or one of 24 game sounds. <strong>PLAY</strong> previews a sound.</li>
 </ul>
 <div class="callout tip">
 <p class="callout-title">Tip</p>
-<p>The background and message sound are saved on your own game, so they stay the same on every server running Expansion Plus.</p>
+<p>The background and message sound are saved in your own game, so they stay the same on every server running Expansion Plus.</p>
 </div>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
+<p><strong>Left menu → Links</strong> opens the Expansion Plus Workshop page and the server's own links (Donate, Facebook, YouTube, TikTok, Instagram, Twitch, Kick and any others). Admins set them in <strong>F8 → INFO → TABLET LINKS BUTTON</strong>.</p>
+<h2 id="fits-every-screen">Fits every screen<a class="headerlink" href="#fits-every-screen" title="Permanent link">#</a></h2>
+<p>The tablet is designed at 1080p and scales to 1440p, 4K, ultrawide and smaller screens.</p>
 <h2 id="3d-views">3D views<a class="headerlink" href="#3d-views" title="Permanent link">#</a></h2>
 <ul>
-<li><strong>Garage → vehicle → 3D VIEW</strong> shows the vehicle in 3D with its parts fitted, plus its owner, condition, value, fluids, every part and its cargo. Drag to turn, mouse wheel to zoom.</li>
-<li><strong>Shops and donations</strong> have a <strong>3D</strong> button on each item showing its weight, size, capacity and description.</li>
+<li><strong>Garage → vehicle → 3D VIEW</strong> shows the vehicle with its parts fitted, plus owner, condition, value, fluids, parts and cargo. Drag to turn, mouse wheel to zoom.</li>
+<li><strong>Shops and donations</strong> have a <strong>3D</strong> button on each item with its weight, size, capacity and description.</li>
 </ul>
     </article>
-    <nav class="pager"><a class="prev" href="getting-started.html"><span>Previous</span>Getting started</a><a class="next" href="bank.html"><span>Next</span>Bank and online pay</a></nav>
+    <nav class="pager"><a class="prev" href="updating.html"><span>Previous</span>Updating to 1.20</a><a class="next" href="bank.html"><span>Next</span>Bank and online pay</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -162,8 +205,12 @@
   <aside class="toc">
     <p class="toc-title">On this page</p>
     <ul>
-<li class="l2"><a href="#apps">Apps</a></li>
-<li class="l2"><a href="#tablet-settings">Tablet settings</a></li>
+<li class="l2"><a href="#back-home-and-forward">Back, Home and Forward</a></li>
+<li class="l2"><a href="#home-screen">Home screen</a></li>
+<li class="l2"><a href="#workshop-apps-inside-the-tablet">Workshop apps inside the tablet</a></li>
+<li class="l2"><a href="#settings">Settings</a></li>
+<li class="l2"><a href="#links">Links</a></li>
+<li class="l2"><a href="#fits-every-screen">Fits every screen</a></li>
 <li class="l2"><a href="#3d-views">3D views</a></li>
     </ul>
   </aside>

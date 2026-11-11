@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bounties | Expansion Plus Wiki</title>
-<meta name="description" content="Bounties Tablet → Bounties. Admins turn bounties on in F8 → SETTINGS → BOUNTIES ; they&#x27;re off by default. Post a bounty on any player: a reward from your b">
+<meta name="description" content="Bounties Jobs → Bounties. Admins turn bounties on in F8 → SETTINGS → BOUNTIES ; they&#x27;re off by default. Post a bounty on any player: a reward from your ban">
 <meta property="og:title" content="Bounties | Expansion Plus Wiki">
-<meta property="og:description" content="Bounties Tablet → Bounties. Admins turn bounties on in F8 → SETTINGS → BOUNTIES ; they&#x27;re off by default. Post a bounty on any player: a reward from your b">
-<meta name="theme-color" content="#0b1220">
+<meta property="og:description" content="Bounties Jobs → Bounties. Admins turn bounties on in F8 → SETTINGS → BOUNTIES ; they&#x27;re off by default. Post a bounty on any player: a reward from your ban">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="dark light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='5' width='26' height='22' rx='4' fill='%234aa8ff'/%3E%3C/svg%3E">
-<script>try{var t=localStorage.getItem("ep-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<script>(function(){var t=null;try{t=localStorage.getItem("ep-theme");}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark";}document.documentElement.setAttribute("data-theme",t);})();</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
   <nav class="top-links">
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Workshop</a>
     <a class="discord" href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a>
-    <button class="theme-btn" aria-label="Switch light and dark" data-theme-toggle>
+    <button class="theme-btn" aria-label="Switch between dark and light mode" title="Dark / light mode" data-theme-toggle>
       <svg viewBox="0 0 24 24" class="sun"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
       <svg viewBox="0 0 24 24" class="moon"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
     </button>
@@ -32,26 +34,49 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.13.2</div>
+    <div class="version">Version 1.20.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
+<li><a href="updating.html">Updating to 1.20</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
-<div class="nav-group"><p class="nav-title">Player features</p><ul>
+<div class="nav-group"><p class="nav-title">Finance</p><ul>
 <li><a href="bank.html">Bank and online pay</a></li>
+<li><a href="stock-exchange.html">Stock exchange</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Garage</p><ul>
 <li><a href="garage.html">Garage</a></li>
+<li><a href="taxi.html">Taxi</a></li>
 <li><a href="rentals.html">Rentals and tracker</a></li>
+<li><a href="vehicle-dashboard.html">Vehicle dashboard</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Workshop</p><ul>
+<li><a href="inventory.html">Inventory</a></li>
+<li><a href="crafting.html">Crafting</a></li>
+<li><a href="repair.html">Repair</a></li>
+<li><a href="drying.html">Drying</a></li>
+<li><a href="appraisal.html">Appraisal</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Trade</p><ul>
 <li><a href="shops.html">Player shops</a></li>
-<li><a href="territory-rent.html">Territory rent</a></li>
-<li><a href="messages.html">Messages</a></li>
-<li><a href="contracts.html">Courier contracts</a></li>
-<li><a href="control-zones.html">Control zones</a></li>
-<li><a href="bounties.html" class="active" aria-current="page">Bounties</a></li>
 <li><a href="community.html">Donations, players and info</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Jobs</p><ul>
+<li><a href="contracts.html">Courier contracts</a></li>
+<li><a href="bounties.html" class="active" aria-current="page">Bounties</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Territory</p><ul>
+<li><a href="territory-rent.html">Territory rent</a></li>
+<li><a href="control-zones.html">Control zones</a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-title">Intel & Social</p><ul>
+<li><a href="loot-scanner.html">Loot scanner</a></li>
+<li><a href="messages.html">Messages</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Admins</p><ul>
 <li><a href="admin.html">Admin panel</a></li>
+<li><a href="workshop-admin.html">Workshop admin</a></li>
 <li><a href="restock.html">Restock a trader</a></li>
 <li><a href="market-editor.html">Market editor</a></li>
 <li><a href="garage-admin.html">Garage admin</a></li>
@@ -64,10 +89,10 @@
 </ul></div>
   </aside>
   <main class="content">
-    <p class="crumb">Player features</p>
+    <p class="crumb">Jobs</p>
     <article class="doc">
 <h1 id="bounties">Bounties<a class="headerlink" href="#bounties" title="Permanent link">#</a></h1>
-<p><strong>Tablet → Bounties.</strong> Admins turn bounties on in <strong>F8 → SETTINGS → BOUNTIES</strong>; they're off by default.</p>
+<p><strong>Jobs → Bounties.</strong> Admins turn bounties on in <strong>F8 → SETTINGS → BOUNTIES</strong>; they're off by default.</p>
 <ol>
 <li><strong>Post a bounty</strong> on any player: a reward from your bank (5,000 to 10,000,000), a reason and a time limit (1 to 48 hours).</li>
 <li>New bounties go to <strong>every player's inbox</strong> with a notification.</li>
@@ -93,9 +118,13 @@
 </tr>
 </tbody>
 </table>
-<p>Markers move every 5 seconds. The hunter and target can fight each other even on PvE servers. Each bounty shows a picture of the target in their gear.</p>
+<p>Admins choose what shows: the red skull to everyone or only to the hunter and poster, the green skull, or neither. Markers move every 5 seconds. The hunter and target can fight each other even on PvE servers. Each bounty shows a picture of the target in their gear.</p>
+<h2 id="one-life-hunters">One-life hunters<a class="headerlink" href="#one-life-hunters" title="Permanent link">#</a></h2>
+<p>If the hunter dies, the target keeps the hunter's deposit and the bounty opens again for someone else. If time runs out, the poster gets their reward back.</p>
+<h2 id="discord-feed">Discord feed<a class="headerlink" href="#discord-feed" title="Permanent link">#</a></h2>
+<p>Admins can post new, taken, paid-out and ended bounties to a Discord channel by webhook (each on or off).</p>
     </article>
-    <nav class="pager"><a class="prev" href="control-zones.html"><span>Previous</span>Control zones</a><a class="next" href="community.html"><span>Next</span>Donations, players and info</a></nav>
+    <nav class="pager"><a class="prev" href="contracts.html"><span>Previous</span>Courier contracts</a><a class="next" href="territory-rent.html"><span>Next</span>Territory rent</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>
@@ -105,6 +134,8 @@
     <p class="toc-title">On this page</p>
     <ul>
 <li class="l2"><a href="#on-the-map">On the map</a></li>
+<li class="l2"><a href="#one-life-hunters">One-life hunters</a></li>
+<li class="l2"><a href="#discord-feed">Discord feed</a></li>
     </ul>
   </aside>
 </div>
