@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -98,6 +98,7 @@
 <li><strong>STORE VEHICLE</strong> stores a vehicle of yours within <strong>12 m</strong>, with its parts, fluids, damage and cargo exactly as they were.</li>
 <li><strong>Park vehicle (garage)</strong> in the scroll menu parks the vehicle you're looking at, with the same rules.</li>
 <li><strong>TAKE OUT</strong> brings it back at a spot you aim at, <strong>4 to 15 m</strong> away (boats need water and get double the range).</li>
+<li>Taking a vehicle out never deletes its saved file until the garage has saved. If anything fails, the vehicle stays safely in the garage.</li>
 <li>Vehicles come out with <strong>the fluid levels they were parked with</strong>, standing on top of slabs, ramps or floors (never under them). A vehicle that drops through the ground in its first 5 seconds is put back.</li>
 <li><strong>Combat lock</strong>: no parking within 30 seconds of a hit or shot, or with an enemy within 100 m.</li>
 <li>Each player can own <strong>10 vehicles</strong> by default, counting every vehicle they own anywhere.</li>
@@ -153,7 +154,22 @@
 </tbody>
 </table>
 <h2 id="impound-and-towing">Impound and towing<a class="headerlink" href="#impound-and-towing" title="Permanent link">#</a></h2>
-<p>Admins can turn on a <strong>parking meter</strong> (unused vehicles get impounded) and <strong>towing</strong> (vehicles left outside parking areas get towed after 120 minutes unused, with a fee and a warning). Impounded vehicles are released from the garage for their fee.</p>
+<ul>
+<li><strong>Towing</strong> (outside parking areas): vehicles left outside parking areas get towed after <strong>120 minutes</strong> unused, with a fee and a warning.</li>
+<li><strong>Tow anywhere</strong>: admins can set <strong>GARAGE → SETTINGS → TOWING → Tow anywhere after (minutes unused)</strong>. Any vehicle left unused that long is towed to its owner's garage, <strong>even inside a parking area</strong>, and needs a <strong>release fee</strong> (a flat amount and / or a % of the vehicle's value) to take out. 0 = off.</li>
+<li>The owner is <strong>warned before the tow</strong>, and players see "towed in ..." for their vehicles.</li>
+<li><strong>Restarts don't affect it</strong>: unused time only counts while the server is up and is saved, so a restart neither resets the timer nor adds its downtime. This applies to both kinds of towing.</li>
+<li>The admin <strong>TOW</strong> page lists every vehicle that will be towed and when.</li>
+</ul>
+<h2 id="vehicles-kept-across-restarts">Vehicles kept across restarts<a class="headerlink" href="#vehicles-kept-across-restarts" title="Permanent link">#</a></h2>
+<ul>
+<li>Every vehicle out in the world is <strong>snapshotted every 10 minutes</strong> (position, parts, cargo, fluids).</li>
+<li>After a restart, a vehicle that <strong>fell through the ground or got flung away</strong> is put back where it was left.</li>
+<li>A vehicle that <strong>didn't come back at all</strong> is rebuilt from its snapshot, and the owner is told.</li>
+<li>Tracked vehicles <strong>never time out</strong> of the game's storage (45 days, topped up automatically), including modded vehicles that aren't in <code>types.xml</code>.</li>
+<li>Vehicles driven far from their last saved spot are found again anywhere on the map instead of being marked lost.</li>
+<li>All of this is in <strong>GARAGE → SETTINGS → VEHICLES IN THE WORLD</strong>.</li>
+</ul>
 <h2 id="taxi-and-dashboard">Taxi and dashboard<a class="headerlink" href="#taxi-and-dashboard" title="Permanent link">#</a></h2>
 <ul>
 <li><strong>TAXI</strong> takes you to a stop or a spot on the map: see <a href="taxi.html">Taxi</a>.</li>
@@ -177,6 +193,7 @@
 <li class="l2"><a href="#dealer-and-player-market">Dealer and player market</a></li>
 <li class="l2"><a href="#services">Services</a></li>
 <li class="l2"><a href="#impound-and-towing">Impound and towing</a></li>
+<li class="l2"><a href="#vehicles-kept-across-restarts">Vehicles kept across restarts</a></li>
 <li class="l2"><a href="#taxi-and-dashboard">Taxi and dashboard</a></li>
     </ul>
   </aside>

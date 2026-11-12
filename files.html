@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -118,6 +118,10 @@
 <td>One saved file per stored vehicle</td>
 </tr>
 <tr>
+<td><code>Garage/out/</code></td>
+<td>Snapshots of vehicles out in the world, used to put back or rebuild them after a restart (old ones are cleaned up automatically)</td>
+</tr>
+<tr>
 <td><code>Bank.json</code></td>
 <td>Savings, group accounts, loans, the bank log</td>
 </tr>
@@ -131,7 +135,7 @@
 </tr>
 <tr>
 <td><code>Shops/Shop_&lt;id&gt;_&lt;steam64&gt;.json</code></td>
-<td>One file per shop: owner, funds, listings, stock, ratings</td>
+<td>One file per shop: owner, name, building, funds, listings, stock, storage, ratings, trader categories and terms</td>
 </tr>
 <tr>
 <td><code>Rent.json</code></td>

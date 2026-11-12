@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Player shops | Expansion Plus Wiki</title>
-<meta name="description" content="Player shops Trade → Shops / My Shop. Players run their own shops that other players buy from and sell to. Opening a shop Buy a Player Shop Kit a small woo">
+<meta name="description" content="Player shops Trade → Shops / My Shop. Players run their own shop buildings that other players buy from and sell to. Note Ghostz Shops is built into Expansi">
 <meta property="og:title" content="Player shops | Expansion Plus Wiki">
-<meta property="og:description" content="Player shops Trade → Shops / My Shop. Players run their own shops that other players buy from and sell to. Opening a shop Buy a Player Shop Kit a small woo">
+<meta property="og:description" content="Player shops Trade → Shops / My Shop. Players run their own shop buildings that other players buy from and sell to. Note Ghostz Shops is built into Expansi">
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -92,14 +92,49 @@
     <p class="crumb">Trade</p>
     <article class="doc">
 <h1 id="player-shops">Player shops<a class="headerlink" href="#player-shops" title="Permanent link">#</a></h1>
-<p><strong>Trade → Shops / My Shop.</strong> Players run their own shops that other players buy from and sell to.</p>
+<p><strong>Trade → Shops / My Shop.</strong> Players run their own shop buildings that other players buy from and sell to.</p>
+<div class="callout note">
+<p class="callout-title">Note</p>
+<p><strong>Ghostz Shops is built into Expansion Plus since 1.21.0.</strong> Don't load <code>@GhostzAbandonedShop</code> as well. Old container shops are packed up automatically: see <a href="updating.html#updating-to-121">Updating to 1.21</a>.</p>
+</div>
+<h2 id="shop-buildings">Shop buildings<a class="headerlink" href="#shop-buildings" title="Permanent link">#</a></h2>
+<p>There are three shop buildings, each with working doors and a storage chest inside:</p>
+<table>
+<thead>
+<tr>
+<th>Building</th>
+<th>Kit classname</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abandoned Shop</td>
+<td><code>GZS_PlayerShopKit</code> (the old kit class, so existing market entries keep working)</td>
+</tr>
+<tr>
+<td>Little Shop</td>
+<td><code>GZS_PlayerShopKit_Little</code></td>
+</tr>
+<tr>
+<td>Minimarket</td>
+<td><code>GZS_PlayerShopKit_Market</code></td>
+</tr>
+</tbody>
+</table>
+<p>A ready-made market category and <code>types.xml</code> entries for the kits are in the mod's <strong>Extras</strong> folder.</p>
 <h2 id="opening-a-shop">Opening a shop<a class="headerlink" href="#opening-a-shop" title="Permanent link">#</a></h2>
 <ol>
-<li>Buy a <strong>Player Shop Kit</strong> (a small wooden crate) from a trader.</li>
-<li>Take it in your hands and use <strong>Place shop</strong>. A preview follows your cursor (within 12 m), sitting on the terrain, with an arrow out of its front (green = fine, red = not here).</li>
-<li>Turn it with the <strong>mouse wheel</strong> or <strong>Q / E</strong>, then <strong>left click</strong> to place it. <strong>Right click</strong> or <strong>Esc</strong> cancels and you keep the kit.</li>
-<li>It becomes a <strong>shipping container</strong> shop that's yours, with a marker on every player's Expansion map. Choose the marker's name and colour under <strong>MY SHOP → MAP MARKER</strong>.</li>
+<li>Buy a <strong>shop kit</strong> from a trader.</li>
+<li>Take it in your hands and toggle placement. A <strong>blueprint</strong> of the building follows you (green = OK, red = blocked).</li>
+<li>Turn it with the <strong>mouse wheel</strong>, raise or lower it with <strong>Numpad 8 / Numpad 2</strong>, then place it.</li>
+<li><strong>Claim it by naming it</strong>: look at the shop's sign and use <strong>Name your shop</strong>. The name shows on the sign, the tablet and the map. Only the owner can rename it (admins can too, for names that break the rules).</li>
 </ol>
+<h2 id="storage-chest">Storage chest<a class="headerlink" href="#storage-chest" title="Permanent link">#</a></h2>
+<ul>
+<li>Every shop has a <strong>storage chest</strong>. Only the owner can take items out by hand.</li>
+<li>Items customers buy appear in the storage, held for them. They collect them with <strong>TAKE MY ITEMS</strong>.</li>
+<li><strong>STOCK FROM STORAGE</strong> (owners) adds what you put in the chest to your stock.</li>
+</ul>
 <h2 id="money-bank-transfers-only">Money: bank transfers only<a class="headerlink" href="#money-bank-transfers-only" title="Permanent link">#</a></h2>
 <ul>
 <li>Customers pay from their bank, and sellers are paid into their bank. Cash is never used.</li>
@@ -109,8 +144,7 @@
 </ul>
 <h2 id="stock-and-listings">Stock and listings<a class="headerlink" href="#stock-and-listings" title="Permanent link">#</a></h2>
 <ul>
-<li>Stocked items <strong>leave the map</strong> and are saved in the shop's file. A buyer gets a fresh item in their inventory (or at their feet).</li>
-<li>Accepted items: Worn or better, empty, nothing attached, magazines unloaded, no spoiled food.</li>
+<li>Stocked items are saved in the shop's file. Accepted items: Worn or better, empty, nothing attached, magazines unloaded, no spoiled food.</li>
 </ul>
 <table>
 <thead>
@@ -135,18 +169,66 @@
 </tbody>
 </table>
 <ul>
-<li><strong>STOCK / TAKE</strong> at the shop moves items between your inventory and the shop.</li>
 <li><strong>MAIL TO SHOP</strong> sends items from anywhere into your shop (not within 60 seconds of combat).</li>
 <li><strong>WHOLESALE</strong> buys stock from the Expansion market at <strong>15% off</strong> (20% off for 10 or more).</li>
 </ul>
+<h2 id="selling-at-a-player-shop">Selling at a player shop<a class="headerlink" href="#selling-at-a-player-shop" title="Permanent link">#</a></h2>
+<p>Put items in the shop's storage (or sell straight from your inventory) and choose who buys:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Who pays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SELL TO SHOP</strong></td>
+<td>The owner buys it at their price, paid from the shop's funds</td>
+</tr>
+<tr>
+<td><strong>SELL TO TRADER</strong></td>
+<td>The shop's trader categories buy it, paid by the server</td>
+</tr>
+<tr>
+<td><strong>SELL ALL (BEST PRICE)</strong></td>
+<td>Sells each item to whichever pays more</td>
+</tr>
+</tbody>
+</table>
+<p>Both prices are shown side by side.</p>
+<h2 id="trader-categories-admins">Trader categories (admins)<a class="headerlink" href="#trader-categories-admins" title="Permanent link">#</a></h2>
+<p><strong>F8 → SHOPS → a shop</strong>: switch any Expansion trader category on, for example Medicals on one shop and Weapons on another. Players can then sell that shop anything those traders sell.</p>
+<table>
+<thead>
+<tr>
+<th>Trader term (per shop)</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seller gets %</td>
+<td>Of the Expansion sell price, paid by the server. The owner can change it within the limits you set (<code>ShopTraderPayMin</code> / <code>ShopTraderPayMax</code>)</td>
+</tr>
+<tr>
+<td>Owner gets %</td>
+<td>The owner's cut of every trader sale (-1 = the server default, <code>ShopTraderCommission</code>)</td>
+</tr>
+<tr>
+<td>Owner keeps sold items</td>
+<td>On: the items become the shop's stock. Off: they go to the server</td>
+</tr>
+</tbody>
+</table>
 <h2 id="trading">Trading<a class="headerlink" href="#trading" title="Permanent link">#</a></h2>
 <ul>
 <li><strong>SHOPS</strong> lists every shop with what it sells and buys, its rating and location, with tabs by Expansion trader.</li>
-<li>Open a shop from any side: stand by the container, look at it and press <strong>F</strong>.</li>
-<li><strong>Buying and selling only work at the shop</strong> (within 4 m). Anywhere else, the shop is view-only.</li>
+<li><strong>Buying and selling only work at the shop.</strong> Anywhere else, the shop is view-only.</li>
 <li>Rate a shop <strong>1 to 5</strong> after trading with it. <strong>TOP SHOPS</strong> ranks them.</li>
-<li><strong>PACK UP SHOP</strong> (empty and at the shop) removes it and gives the kit back.</li>
 </ul>
+<h2 id="packing-up">Packing up<a class="headerlink" href="#packing-up" title="Permanent link">#</a></h2>
+<p>Use a <strong>screwdriver</strong> at the front door (or <strong>PACK UP SHOP</strong> on the tablet). You get the kit back and everything (stock, funds, ratings, name) is kept for when you place it again.</p>
     </article>
     <nav class="pager"><a class="prev" href="appraisal.html"><span>Previous</span>Appraisal</a><a class="next" href="community.html"><span>Next</span>Donations, players and info</a></nav>
     <footer class="foot">
@@ -157,10 +239,15 @@
   <aside class="toc">
     <p class="toc-title">On this page</p>
     <ul>
+<li class="l2"><a href="#shop-buildings">Shop buildings</a></li>
 <li class="l2"><a href="#opening-a-shop">Opening a shop</a></li>
+<li class="l2"><a href="#storage-chest">Storage chest</a></li>
 <li class="l2"><a href="#money-bank-transfers-only">Money: bank transfers only</a></li>
 <li class="l2"><a href="#stock-and-listings">Stock and listings</a></li>
+<li class="l2"><a href="#selling-at-a-player-shop">Selling at a player shop</a></li>
+<li class="l2"><a href="#trader-categories-admins">Trader categories (admins)</a></li>
 <li class="l2"><a href="#trading">Trading</a></li>
+<li class="l2"><a href="#packing-up">Packing up</a></li>
     </ul>
   </aside>
 </div>

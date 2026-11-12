@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html" class="active" aria-current="page">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -138,7 +138,7 @@
 </ol>
 <div class="callout warning">
 <p class="callout-title">Warning</p>
-<p>Do <strong>not</strong> load <code>@GhostzQoLPlus</code> with Expansion Plus 1.20 or later. Its code is already inside, and loading both stops the server starting.</p>
+<p>Do <strong>not</strong> load <code>@GhostzQoLPlus</code> (1.20 or later) or <code>@GhostzAbandonedShop</code> (1.21 or later) with Expansion Plus. Their code is already inside, and loading both stops the server starting.</p>
 </div>
 <h2 id="players">Players<a class="headerlink" href="#players" title="Permanent link">#</a></h2>
 <p>Players subscribe on the Steam Workshop (ID <strong>3832964217</strong>). The tablet, map drawing and sounds run on each player's game, so <strong>players always need the same version as the server</strong>.</p>
@@ -152,10 +152,10 @@
 </ol>
 <p>After that, add or remove admins in game on <strong>F8 → SETTINGS</strong> (<strong>ADD MY ID</strong> adds yourself). Admins in Expansion Plus are admins of the Workshop apps too. If someone who isn't an admin presses F8, the panel shows them their Steam64 ID so they can send it to you. Narrower roles are covered in <a href="admin.html#admin-roles">Admin panel</a>.</p>
 <h2 id="make-the-shop-kit-buyable">Make the shop kit buyable<a class="headerlink" href="#make-the-shop-kit-buyable" title="Permanent link">#</a></h2>
-<p>Players open a shop with a <strong>Player Shop Kit</strong>. Add it to a trader:</p>
+<p>Players open a shop with a <strong>shop kit</strong>. There are three: <code>GZS_PlayerShopKit</code> (Abandoned Shop), <code>GZS_PlayerShopKit_Little</code> (Little Shop) and <code>GZS_PlayerShopKit_Market</code> (Minimarket). The quickest way is the ready-made market category and <code>types.xml</code> entries in the mod's <strong>Extras</strong> folder. Or add them by hand:</p>
 <ol>
 <li>Press <strong>F8</strong> and open <strong>MARKET</strong>.</li>
-<li>Edit a category and add an item with the classname <code>gzs_playershopkit</code>, with a price and stock.</li>
+<li>Edit a category and add the kit classnames, with a price and stock.</li>
 <li>Make sure that category is in a trader, then restart.</li>
 </ol>
 <h2 id="keys">Keys<a class="headerlink" href="#keys" title="Permanent link">#</a></h2>
@@ -207,7 +207,7 @@
 <h3 id="boat-radar">Boat radar<a class="headerlink" href="#boat-radar" title="Permanent link">#</a></h3>
 <p>In a boat, a small round radar sits in the bottom-right corner: 500 m range, heading-up, with a sweep line. Vehicles show orange, people white, boats blue. <strong>Mouse wheel up</strong> turns it on or off.</p>
     </article>
-    <nav class="pager"><a class="prev" href="index.html"><span>Previous</span>Introduction</a><a class="next" href="updating.html"><span>Next</span>Updating to 1.20</a></nav>
+    <nav class="pager"><a class="prev" href="index.html"><span>Previous</span>Introduction</a><a class="next" href="updating.html"><span>Next</span>Updating</a></nav>
     <footer class="foot">
       <span>Expansion Plus by Ghostz Gaming</span>
       <span><a href="https://discord.gg/waZrD357wZ" target="_blank" rel="noopener">Discord</a> · <a href="https://buymeacoffee.com/ghostzgaming" target="_blank" rel="noopener">Buy me a coffee</a> · <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3832964217" target="_blank" rel="noopener">Steam Workshop</a></span>

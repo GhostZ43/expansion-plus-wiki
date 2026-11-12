@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -119,7 +119,7 @@
 </tr>
 <tr>
 <td>Workshop apps</td>
-<td>F8 → ALL TOOLS → QOL ADMIN CONTROL</td>
+<td>F8 → QOL tab</td>
 <td><code>profiles/GhostzQoLPlus/&lt;App&gt;.json</code></td>
 </tr>
 </tbody>
@@ -220,6 +220,36 @@
 <td><code>ShopMailCombatSeconds</code></td>
 <td>60</td>
 <td>after taking a hit or firing, 0 = no wait</td>
+</tr>
+<tr>
+<td>Trader items: default pay (%)</td>
+<td><code>ShopTraderPayDefault</code></td>
+<td>70</td>
+<td>of the Expansion sell price, for a new shop (the owner changes it)</td>
+</tr>
+<tr>
+<td>Trader items: lowest pay owners may set (%)</td>
+<td><code>ShopTraderPayMin</code></td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>Trader items: highest pay owners may set (%)</td>
+<td><code>ShopTraderPayMax</code></td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td>Trader items: owner's cut (%)</td>
+<td><code>ShopTraderCommission</code></td>
+<td>10</td>
+<td>of the Expansion sell price, paid by the server to the owner</td>
+</tr>
+<tr>
+<td>Expansion sell % (fallback)</td>
+<td><code>ShopMarketSellPercent</code></td>
+<td>75</td>
+<td>for market items with no sell % of their own</td>
 </tr>
 </tbody>
 </table>
@@ -1158,7 +1188,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="impound-and-recovery">Impound And Recovery<a class="headerlink" href="#impound-and-recovery" title="Permanent link">#</a></h3>
+<h3 id="vehicles-in-the-world">Vehicles In The World<a class="headerlink" href="#vehicles-in-the-world" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -1170,28 +1200,28 @@
 </thead>
 <tbody>
 <tr>
-<td>Parking meter (minutes)</td>
-<td><code>ParkingMeterMinutes</code></td>
-<td>0</td>
-<td>unused this long anywhere = impounded (0 = off)</td>
+<td>Bring back missing vehicles</td>
+<td><code>OutRestoreMissing</code></td>
+<td>1</td>
+<td>a vehicle out in the world that doesn't come back after a restart is rebuilt from its last snapshot (1/0)</td>
 </tr>
 <tr>
-<td>Parking meter fee</td>
-<td><code>ParkingMeterFee</code></td>
-<td>0</td>
-<td></td>
+<td>Snapshot every (minutes)</td>
+<td><code>OutSnapshotMinutes</code></td>
+<td>10</td>
+<td>2 to 120</td>
 </tr>
 <tr>
-<td>Parking meter fee (% of value)</td>
-<td><code>ParkingMeterFeePercent</code></td>
-<td>0</td>
-<td></td>
+<td>Never expire for (days)</td>
+<td><code>OutLifetimeDays</code></td>
+<td>45</td>
+<td>keeps tracked vehicles from timing out of the game's storage (0 = game default)</td>
 </tr>
 <tr>
-<td>Parking meter reason</td>
-<td><code>ParkingMeterReason</code></td>
-<td>Parking meter</td>
-<td>shown to the owner</td>
+<td>Put back fallen vehicles</td>
+<td><code>OutPutBackFallen</code></td>
+<td>1</td>
+<td>after a restart, vehicles under the ground or flung away go back to where they were (1/0)</td>
 </tr>
 </tbody>
 </table>
@@ -1207,7 +1237,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Towing</td>
+<td>Tow outside parking areas</td>
 <td><code>TowEnabled</code></td>
 <td>0</td>
 <td>tow vehicles left outside parking areas (1/0)</td>
@@ -1253,6 +1283,30 @@
 <td><code>TowExemptPlayers</code></td>
 <td>(empty)</td>
 <td>comma separated player ids</td>
+</tr>
+<tr>
+<td>Tow anywhere after (minutes unused)</td>
+<td><code>ParkingMeterMinutes</code></td>
+<td>0</td>
+<td>even in parking areas; counts server time only, restarts don't reset it (0 = off, e.g. 60)</td>
+</tr>
+<tr>
+<td>Tow anywhere release fee</td>
+<td><code>ParkingMeterFee</code></td>
+<td>0</td>
+<td>flat amount</td>
+</tr>
+<tr>
+<td>Tow anywhere release fee (% of value)</td>
+<td><code>ParkingMeterFeePercent</code></td>
+<td>0</td>
+<td>added to the flat fee</td>
+</tr>
+<tr>
+<td>Tow anywhere reason</td>
+<td><code>ParkingMeterReason</code></td>
+<td>Parking meter</td>
+<td>shown to the owner</td>
 </tr>
 </tbody>
 </table>
@@ -1681,7 +1735,7 @@
 </tbody>
 </table>
 <h2 id="workshop-apps-profilesghostzqolplus">Workshop apps (profiles/GhostzQoLPlus)<a class="headerlink" href="#workshop-apps-profilesghostzqolplus" title="Permanent link">#</a></h2>
-<p>Edited in game under <strong>Workshop → Admin Control</strong> (or <strong>F8 → ALL TOOLS → QOL ADMIN CONTROL</strong>). Each app has its own file.</p>
+<p>Edited in game under <strong>F8 → QOL tab</strong>. Each app has its own file.</p>
 <h3 id="generaljson">General.json<a class="headerlink" href="#generaljson" title="Permanent link">#</a></h3>
 <table>
 <thead>
@@ -2092,7 +2146,7 @@
 <li class="l3"><a href="#dealer-and-market">Dealer And Market</a></li>
 <li class="l3"><a href="#service">Service</a></li>
 <li class="l3"><a href="#ownership">Ownership</a></li>
-<li class="l3"><a href="#impound-and-recovery">Impound And Recovery</a></li>
+<li class="l3"><a href="#vehicles-in-the-world">Vehicles In The World</a></li>
 <li class="l3"><a href="#towing">Towing</a></li>
 <li class="l3"><a href="#services">Services</a></li>
 <li class="l3"><a href="#taxi">Taxi</a></li>

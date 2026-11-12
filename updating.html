@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Updating to 1.20 | Expansion Plus Wiki</title>
-<meta name="description" content="Updating to 1.20 Expansion Plus 1.20.0 brings Ghostz QoL Plus inside: one mod, one tablet, one admin panel. Nothing is wiped. Server checklist Back up prof">
-<meta property="og:title" content="Updating to 1.20 | Expansion Plus Wiki">
-<meta property="og:description" content="Updating to 1.20 Expansion Plus 1.20.0 brings Ghostz QoL Plus inside: one mod, one tablet, one admin panel. Nothing is wiped. Server checklist Back up prof">
+<title>Updating | Expansion Plus Wiki</title>
+<meta name="description" content="Updating Updating to 1.21 Expansion Plus 1.21.0 brings Ghostz Shops inside: player shops are now buildings. Nothing is wiped. Server checklist Back up prof">
+<meta property="og:title" content="Updating | Expansion Plus Wiki">
+<meta property="og:description" content="Updating Updating to 1.21 Expansion Plus 1.21.0 brings Ghostz Shops inside: player shops are now buildings. Nothing is wiped. Server checklist Back up prof">
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html" class="active" aria-current="page">Updating to 1.20</a></li>
+<li><a href="updating.html" class="active" aria-current="page">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -91,9 +91,28 @@
   <main class="content">
     <p class="crumb">Getting started</p>
     <article class="doc">
-<h1 id="updating-to-120">Updating to 1.20<a class="headerlink" href="#updating-to-120" title="Permanent link">#</a></h1>
+<h1 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">#</a></h1>
+<h2 id="updating-to-121">Updating to 1.21<a class="headerlink" href="#updating-to-121" title="Permanent link">#</a></h2>
+<p>Expansion Plus 1.21.0 brings <strong>Ghostz Shops</strong> inside: player shops are now buildings. Nothing is wiped.</p>
+<h3 id="server-checklist">Server checklist<a class="headerlink" href="#server-checklist" title="Permanent link">#</a></h3>
+<ol>
+<li><strong>Back up</strong> <code>profiles/GhostzSuite</code>.</li>
+<li>Update <code>@GhostzSuite</code>.</li>
+<li><strong>Remove <code>@GhostzAbandonedShop</code></strong> from the server's <code>-mod</code> list and from your modlist or launcher.</li>
+<li>Keep <code>keys/Ghostz.bikey</code> (same key).</li>
+<li>Add the shop kits to your market: <code>GZS_PlayerShopKit</code> (Abandoned Shop), <code>GZS_PlayerShopKit_Little</code> (Little Shop) and <code>GZS_PlayerShopKit_Market</code> (Minimarket). A ready-made market category and <code>types.xml</code> entries are in the <strong>Extras</strong> folder. Existing <code>GZS_PlayerShopKit</code> market entries keep working.</li>
+<li>Restart. Settings files are updated with the new defaults automatically.</li>
+</ol>
+<h3 id="old-container-shops">Old container shops<a class="headerlink" href="#old-container-shops" title="Permanent link">#</a></h3>
+<p>At the first start, every old container shop is <strong>packed up automatically</strong>. Each shop keeps its <strong>stock, funds, ratings and name</strong>. The container is removed and the owner gets a <strong>shop kit</strong> at their next login. Placing the kit opens the shop again. See <a href="shops.html">Player shops</a>.</p>
+<h3 id="new-in-121">New in 1.21<a class="headerlink" href="#new-in-121" title="Permanent link">#</a></h3>
+<ul>
+<li>Garage <strong>tow anywhere</strong> and <strong>vehicles kept across restarts</strong> (off / on by default respectively): see <a href="garage.html#impound-and-towing">Garage</a> and <a href="settings.html#towing">Settings</a>.</li>
+<li>Vehicle snapshots are saved in <code>profiles/GhostzSuite/Garage/out/</code> (old ones are cleaned up automatically).</li>
+</ul>
+<h2 id="updating-to-120">Updating to 1.20<a class="headerlink" href="#updating-to-120" title="Permanent link">#</a></h2>
 <p>Expansion Plus 1.20.0 brings <strong>Ghostz QoL Plus</strong> inside: one mod, one tablet, one admin panel. Nothing is wiped.</p>
-<h2 id="server-checklist">Server checklist<a class="headerlink" href="#server-checklist" title="Permanent link">#</a></h2>
+<h3 id="server-checklist_1">Server checklist<a class="headerlink" href="#server-checklist_1" title="Permanent link">#</a></h3>
 <ol>
 <li><strong>Back up</strong> <code>profiles/GhostzSuite</code> and <code>profiles/GhostzQoLPlus</code>.</li>
 <li>Update <code>@GhostzSuite</code>.</li>
@@ -105,7 +124,7 @@
 <p class="callout-title">Warning</p>
 <p>Loading <code>@GhostzQoLPlus</code> together with Expansion Plus 1.20 stops the server starting, because the same code would be loaded twice.</p>
 </div>
-<h2 id="what-is-kept">What is kept<a class="headerlink" href="#what-is-kept" title="Permanent link">#</a></h2>
+<h3 id="what-is-kept">What is kept<a class="headerlink" href="#what-is-kept" title="Permanent link">#</a></h3>
 <table>
 <thead>
 <tr>
@@ -152,14 +171,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="what-changes">What changes<a class="headerlink" href="#what-changes" title="Permanent link">#</a></h2>
+<h3 id="what-changes">What changes<a class="headerlink" href="#what-changes" title="Permanent link">#</a></h3>
 <ul>
 <li><strong>Payments:</strong> Workshop fees (crafting, repair, drying, scanner) are paid with <strong>Expansion Plus money</strong>: the player's BANK / CASH choice on the tablet, using the other if the first is short. Each charge shows in <strong>Transactions</strong>. QoL's <code>Payments.json</code> (PayWith, CashItems) is no longer used. Fee amounts are unchanged.</li>
 <li><strong>F5</strong> now opens the Expansion Plus tablet on the <strong>Workshop</strong> hub. The old rusted PDA is gone.</li>
 <li><strong>Admins:</strong> Expansion Plus <code>Admins</code> and <code>AdminRoles</code> count for the Workshop apps (full admin = owner, settings rights = admin, other staff = read-only). <code>Admins.json</code> still works.</li>
 <li>The <strong>stack-size patch</strong> builder moved to <code>@GhostzSuite/Tools</code>.</li>
 </ul>
-<h2 id="players">Players<a class="headerlink" href="#players" title="Permanent link">#</a></h2>
+<h3 id="players">Players<a class="headerlink" href="#players" title="Permanent link">#</a></h3>
 <p>Players unsubscribe from Ghostz QoL Plus and update Expansion Plus. Their tablet background and message sound are kept.</p>
     </article>
     <nav class="pager"><a class="prev" href="getting-started.html"><span>Previous</span>Getting started</a><a class="next" href="tablet.html"><span>Next</span>The tablet</a></nav>
@@ -171,10 +190,15 @@
   <aside class="toc">
     <p class="toc-title">On this page</p>
     <ul>
-<li class="l2"><a href="#server-checklist">Server checklist</a></li>
-<li class="l2"><a href="#what-is-kept">What is kept</a></li>
-<li class="l2"><a href="#what-changes">What changes</a></li>
-<li class="l2"><a href="#players">Players</a></li>
+<li class="l2"><a href="#updating-to-121">Updating to 1.21</a></li>
+<li class="l3"><a href="#server-checklist">Server checklist</a></li>
+<li class="l3"><a href="#old-container-shops">Old container shops</a></li>
+<li class="l3"><a href="#new-in-121">New in 1.21</a></li>
+<li class="l2"><a href="#updating-to-120">Updating to 1.20</a></li>
+<li class="l3"><a href="#server-checklist_1">Server checklist</a></li>
+<li class="l3"><a href="#what-is-kept">What is kept</a></li>
+<li class="l3"><a href="#what-changes">What changes</a></li>
+<li class="l3"><a href="#players">Players</a></li>
     </ul>
   </aside>
 </div>

@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -127,11 +127,19 @@
 </tr>
 <tr>
 <td>Can't place the shop kit</td>
-<td>Use flat, open ground, inside your territory if Expansion limits building to territories</td>
+<td>The blueprint must be green: use open ground, raise or lower it with Numpad 8 / 2, and stay inside your territory if Expansion limits building to territories</td>
 </tr>
 <tr>
-<td>Shop container vanished</td>
-<td><strong>F8 → SHOPS → VIEW → RESPAWN CONTAINER</strong>. Stock and funds are safe in the shop file</td>
+<td>Old container shop is gone after updating to 1.21</td>
+<td>That's expected: it was packed up. The owner gets a shop kit at their next login; placing it reopens the shop with its stock, funds, ratings and name</td>
+</tr>
+<tr>
+<td>Server won't start after updating to 1.21</td>
+<td>Remove <code>@GhostzAbandonedShop</code>: Ghostz Shops is built in now</td>
+</tr>
+<tr>
+<td>Renting does nothing at a trader</td>
+<td>Update to 1.21: any Expansion trader zone now counts. RENT tells you why if you still can't rent</td>
 </tr>
 <tr>
 <td>Market edits don't show</td>
@@ -151,7 +159,7 @@
 </tr>
 <tr>
 <td>Workshop app says it's switched off</td>
-<td>Turn the module on in <strong>F8 → ALL TOOLS → QOL ADMIN CONTROL → DASHBOARD</strong> (<code>General.json</code> → <code>Modules</code>)</td>
+<td>Turn the module on in <strong>F8 → QOL tab → DASHBOARD</strong> (<code>General.json</code> → <code>Modules</code>)</td>
 </tr>
 <tr>
 <td>Gear Appraisal says it needs Expansion Market</td>
@@ -181,7 +189,7 @@ No. Every price, payment, stock change and spawn is checked and done on the serv
 <p><strong>What happens to shop stock on a restart?</strong>
 Nothing. Stock lives in the shop's file, not in the world.</p>
 <p><strong>Do I need to wipe to update?</strong>
-No. Settings and data carry over; new settings appear with their defaults. See <a href="updating.html">Updating to 1.20</a>.</p>
+No. Settings and data carry over; new settings appear with their defaults. See <a href="updating.html">Updating</a>.</p>
 <p><strong>Where do Workshop fees go?</strong>
 They're paid with Expansion Plus money (bank or cash, the player's choice) and logged in Transactions.</p>
 <p><strong>Do players need the update too?</strong>

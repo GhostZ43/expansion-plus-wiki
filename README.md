@@ -21,13 +21,13 @@ Banking, a stock exchange, a full vehicle garage, player shops, territory rent, 
 
 | | |
 | --- | --- |
-| **Version** | 1.20.0 |
+| **Version** | 1.21.0 |
 | **Workshop ID** | 3832964217 |
 | **Needs** | CF, Dabs Framework, DayZ-Expansion-Licensed, DayZ-Expansion-Bundle |
 | **Keys** | F7 tablet · F5 Workshop hub · F8 admin · F9 server info · K garage · Numpad 0 cruise |
 
 > [!IMPORTANT]
-> **Ghostz QoL Plus is built into Expansion Plus since 1.20.0.** Remove `@GhostzQoLPlus` from your server and modlist. All its settings, recipes and uncollected crafts are kept. See [Updating to 1.20](https://ghostz43.github.io/expansion-plus-wiki/updating.html).
+> **Ghostz Shops is built into Expansion Plus since 1.21.0** and **Ghostz QoL Plus since 1.20.0.** Remove `@GhostzAbandonedShop` and `@GhostzQoLPlus` from your server and modlist. Old container shops are packed up automatically and owners get a shop kit; all QoL settings, recipes and uncollected crafts are kept. See [Updating](https://ghostz43.github.io/expansion-plus-wiki/updating.html).
 
 ## 📱 The Ghostz Tab 10.1
 
@@ -38,7 +38,7 @@ A physical tablet with **Back / Home / Forward** keys on the bezel and full page
 | 💰 **Finance** | Bank (savings, group accounts, transfers, loans, online pay) · Survivor Stock Exchange |
 | 🚗 **Garage** | Garage (store with cargo, dealer, player market, service, insurance, locks) · Taxi · Rent-a-Ride & Tracker · Vehicle Dashboard |
 | 🛠️ **Workshop** | Inventory Manager · Crafting · Repair · Drying Station (a working washer-dryer) · Gear Appraisal |
-| 🏪 **Trade** | Player shops (placeable container shops, wholesale, ratings) · Community donations |
+| 🏪 **Trade** | Player shops (Abandoned Shop, Little Shop and Minimarket buildings with storage, sell to shop or trader, wholesale, ratings) · Community donations |
 | 📦 **Jobs** | Courier contracts · Quests & missions · Bounties |
 | 🚩 **Territory** | Territory rent by base size · Conflict zones with daily income and production |
 | 📡 **Intel** | Loot Scanner with a radar scope and in-world markers |
@@ -65,7 +65,7 @@ Full steps are on the [Getting started](https://ghostz43.github.io/expansion-plu
 
 | Section | Pages |
 | --- | --- |
-| Getting started | Introduction · Install and first admin · Updating to 1.20 · The tablet |
+| Getting started | Introduction · Install and first admin · Updating · The tablet |
 | Finance | Bank and online pay · Stock exchange |
 | Garage | Garage · Taxi · Rentals and tracker · Vehicle dashboard |
 | Workshop | Inventory · Crafting · Repair · Drying · Appraisal |

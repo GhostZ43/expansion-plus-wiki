@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Changelog | Expansion Plus Wiki</title>
-<meta name="description" content="Changelog 1.20.0 – One Tablet 2026-11-11 Ghostz QoL Plus built in : Inventory, Crafting, Repair, Drying, Appraisal, Loot Scanner and Vehicle Dashboard open">
+<meta name="description" content="Changelog 1.21.0 – Shop buildings 2026-11-12 Ghostz Shops built in : player shops are now buildings Abandoned Shop, Little Shop, Minimarket with working do">
 <meta property="og:title" content="Changelog | Expansion Plus Wiki">
-<meta property="og:description" content="Changelog 1.20.0 – One Tablet 2026-11-11 Ghostz QoL Plus built in : Inventory, Crafting, Repair, Drying, Appraisal, Loot Scanner and Vehicle Dashboard open">
+<meta property="og:description" content="Changelog 1.21.0 – Shop buildings 2026-11-12 Ghostz Shops built in : player shops are now buildings Abandoned Shop, Little Shop, Minimarket with working do">
 <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="color-scheme" content="dark light">
@@ -34,11 +34,11 @@
 </header>
 <div class="layout">
   <aside class="sidebar" id="sidebar">
-    <div class="version">Version 1.20.0</div>
+    <div class="version">Version 1.21.0</div>
     <div class="nav-group"><p class="nav-title">Getting started</p><ul>
 <li><a href="index.html">Introduction</a></li>
 <li><a href="getting-started.html">Getting started</a></li>
-<li><a href="updating.html">Updating to 1.20</a></li>
+<li><a href="updating.html">Updating</a></li>
 <li><a href="tablet.html">The tablet</a></li>
 </ul></div>
 <div class="nav-group"><p class="nav-title">Finance</p><ul>
@@ -92,9 +92,28 @@
     <p class="crumb">Reference</p>
     <article class="doc">
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
+<h2 id="1210-shop-buildings-2026-11-12">1.21.0 – Shop buildings (2026-11-12)<a class="headerlink" href="#1210-shop-buildings-2026-11-12" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Ghostz Shops built in</strong>: player shops are now buildings (<strong>Abandoned Shop, Little Shop, Minimarket</strong>) with working doors, a blueprint for placing and a <strong>storage chest</strong>. Remove <code>@GhostzAbandonedShop</code>. Old container shops pack up automatically and owners get a kit. See <a href="updating.html#updating-to-121">Updating to 1.21</a>.</li>
+<li><strong>Claim a shop by naming it</strong> on its sign; the name shows on the sign, the tablet and the map.</li>
+<li><strong>SELL TO SHOP</strong> (owner pays) or <strong>SELL TO TRADER</strong> (server pays), both prices shown; <strong>SELL ALL (BEST PRICE)</strong>.</li>
+<li>Admins switch <strong>Expansion trader categories</strong> on per shop and set the seller %, the owner's cut and whether the owner keeps sold items.</li>
+<li><strong>Garage: tow anywhere</strong> after a set time unused, even in parking areas, with a release fee. Tow timers count server time only, so restarts never reset them or add downtime.</li>
+<li><strong>Garage: vehicles kept across restarts</strong>: snapshots every 10 minutes; fallen or flung vehicles are put back, missing ones rebuilt; tracked vehicles never time out of storage.</li>
+<li><strong>Rentals</strong>: fixed renting doing nothing at some traders (any Expansion trader zone counts); RENT always says why it can't rent.</li>
+<li><strong>Tablet</strong>: new backgrounds <strong>Misty Peaks</strong> and <strong>Dragon Dusk</strong>.</li>
+</ul>
+<h2 id="1201-garage-retrieval-fix-2026-11-11">1.20.1 – Garage retrieval fix (2026-11-11)<a class="headerlink" href="#1201-garage-retrieval-fix-2026-11-11" title="Permanent link">#</a></h2>
+<ul>
+<li>Taking a vehicle out of the garage no longer deletes its stored file until the garage database has saved; if anything fails, everything is put back.</li>
+<li>Player take-out and admin <strong>SPAWN HERE</strong> use the same path. A slot whose file is missing is kept, and you're told which slot.</li>
+<li>New <strong>GARAGE RESTORE</strong> lines in the script log.</li>
+<li>New <strong>QOL</strong> tab in F8 for the Workshop settings; the ALL TOOLS buttons are now <strong>QOL SETTINGS</strong>.</li>
+<li>The tablet's Back / Home / Forward keys no longer show numbers over the bezel.</li>
+</ul>
 <h2 id="1200-one-tablet-2026-11-11">1.20.0 – One Tablet (2026-11-11)<a class="headerlink" href="#1200-one-tablet-2026-11-11" title="Permanent link">#</a></h2>
 <ul>
-<li><strong>Ghostz QoL Plus built in</strong>: Inventory, Crafting, Repair, Drying, Appraisal, Loot Scanner and Vehicle Dashboard open inside the tablet. Remove <code>@GhostzQoLPlus</code> from servers. See <a href="updating.html">Updating to 1.20</a>.</li>
+<li><strong>Ghostz QoL Plus built in</strong>: Inventory, Crafting, Repair, Drying, Appraisal, Loot Scanner and Vehicle Dashboard open inside the tablet. Remove <code>@GhostzQoLPlus</code> from servers. See <a href="updating.html#updating-to-120">Updating to 1.20</a>.</li>
 <li><strong>Ghostz Tab 10.1</strong>: a physical tablet frame round every screen, with <strong>Back / Home / Forward</strong> keys and page history.</li>
 <li><strong>Hubs</strong> on the home screen: Finance, Garage, Workshop, Trade, Jobs, Territory, Intel, Social. <strong>Quick Status</strong> strip. Backgrounds moved to Settings.</li>
 <li><strong>Drying Station</strong> as a washer-dryer; <strong>Loot Scanner</strong> radar scope.</li>
@@ -208,6 +227,8 @@
   <aside class="toc">
     <p class="toc-title">On this page</p>
     <ul>
+<li class="l2"><a href="#1210-shop-buildings-2026-11-12">1.21.0 – Shop buildings (2026-11-12)</a></li>
+<li class="l2"><a href="#1201-garage-retrieval-fix-2026-11-11">1.20.1 – Garage retrieval fix (2026-11-11)</a></li>
 <li class="l2"><a href="#1200-one-tablet-2026-11-11">1.20.0 – One Tablet (2026-11-11)</a></li>
 <li class="l2"><a href="#earlier-versions">Earlier versions</a></li>
     </ul>
